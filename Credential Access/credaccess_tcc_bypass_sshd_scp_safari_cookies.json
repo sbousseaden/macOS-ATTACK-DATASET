@@ -87,7 +87,6 @@
         "fe80::f908:f796:ebc2:41df"
       ],
       "name": "Sisis-MacBook-Pro.local",
-      "id": "D9C40E3D-DFD7-5382-81EC-C31215E704CE",
       "architecture": "x86_64"
     },
     "event": {
@@ -249,8 +248,6 @@
         "fe80::f908:f796:ebc2:41df"
       ],
       "name": "Sisis-MacBook-Pro.local",
-      "id": "D9C40E3D-DFD7-5382-81EC-C31215E704CE",
-,
       "architecture": "x86_64"
     },
     "event": {
@@ -319,4 +316,3 @@
     1610281269480
   ]
 }
-
