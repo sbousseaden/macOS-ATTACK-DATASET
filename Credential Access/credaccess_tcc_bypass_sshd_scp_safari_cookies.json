@@ -125,35 +125,7 @@
       "name": "staff",
       "id": 20
     }
-  },
-  "fields": {
-    "event.ingested": [
-      "2021-01-10T13:18:42.975Z"
-    ],
-    "@timestamp": [
-      "2021-01-10T13:18:36.549Z"
-    ],
-    "event.created": [
-      "2021-01-10T13:18:36.549Z"
-    ]
-  },
-  "highlight": {
-    "process.name": [
-      "@kibana-highlighted-field@scp@/kibana-highlighted-field@"
-    ],
-    "event.category": [
-      "@kibana-highlighted-field@process@/kibana-highlighted-field@"
-    ],
-    "event.type": [
-      "@kibana-highlighted-field@start@/kibana-highlighted-field@"
-    ],
-    "process.command_line": [
-      "@kibana-highlighted-field@scp -f /Users/sisi/Library/Cookies/Cookies.binarycookies@/kibana-highlighted-field@"
-    ]
-  },
-  "sort": [
-    1610284716549
-  ]
+  }
 }
 
 
@@ -286,33 +258,5 @@
       "name": "staff",
       "id": 20
     }
-  },
-  "fields": {
-    "event.ingested": [
-      "2021-01-10T12:22:13.678Z"
-    ],
-    "@timestamp": [
-      "2021-01-10T12:21:09.480Z"
-    ],
-    "event.created": [
-      "2021-01-10T12:21:09.480Z"
-    ]
-  },
-  "highlight": {
-    "process.name": [
-      "@kibana-highlighted-field@scp@/kibana-highlighted-field@"
-    ],
-    "event.category": [
-      "@kibana-highlighted-field@process@/kibana-highlighted-field@"
-    ],
-    "event.type": [
-      "@kibana-highlighted-field@start@/kibana-highlighted-field@"
-    ],
-    "process.command_line": [
-      "@kibana-highlighted-field@scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -q sisi@localhost:/Users/sisi/Library/Cookies/Cookies.binarycookies /tmp/cookies.bin@/kibana-highlighted-field@"
-    ]
-  },
-  "sort": [
-    1610281269480
-  ]
+  }
 }
