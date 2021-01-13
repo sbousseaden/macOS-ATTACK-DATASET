@@ -14,7 +14,7 @@
 			"args": [
 				"sqlite3",
 				"/Users/sisi/Library/Application Support/com.apple.TCC/TCC.db",
-				"INSERT or REPLACE INTO access (service, client, client_type,allowed,prompt_count,csreq,last_modified) VALUES('kTCCServiceCamera', '123', '0', 'a', '1', '12', '0')"
+				"INSERT OR REPLACE INTO access VALUES('kTCCServiceAccessibility','com.applle.kbls',0,1,1,NULL,NULL)"
 			],
 			"parent": {
 				"args": [],
@@ -24,7 +24,7 @@
 			"pid": 3256,
 			"args_count": 3,
 			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTMyNTYtMTMyNTQxNDAzMjguNTYxMjczMDAw",
-			"command_line": "sqlite3 /Users/sisi/Library/Application Support/com.apple.TCC/TCC.db INSERT or REPLACE INTO access (service, client, client_type,allowed,prompt_count,csreq,last_modified) VALUES('kTCCServiceCamera', '123', '0', 'a', '1', '12', '0')",
+			"command_line": "sqlite3 /Users/sisi/Library/Application Support/com.apple.TCC/TCC.db INSERT OR REPLACE INTO access VALUES('kTCCServiceAccessibility','com.applle.kbls',0,1,1,NULL,NULL)",
 			"executable": "/usr/bin/sqlite3",
 			"hash": {
 				"sha1": "9327ba7cbbc7d4e5304a83b4e4f5dfd2d5e86182",
