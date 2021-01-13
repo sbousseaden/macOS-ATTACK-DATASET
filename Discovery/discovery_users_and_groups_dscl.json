@@ -1,0 +1,248 @@
+{
+        "_index" : ".ds-logs-endpoint.events.process-default-000003",
+        "_id" : "2HCE93YBORzSN0EUpKmA",
+        "_source" : {
+          "agent" : {
+            "id" : "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+            "type" : "endpoint",
+            "version" : "7.10.1"
+          },
+          "process" : {
+            "Ext" : {
+              "ancestry" : [ ]
+            },
+            "args" : [
+              "dscl",
+              "/Active Directory/EXAMPLECORP/EXAMPLECORP.pvt/",
+              "-read",
+              "/Groups/Domain Admins"
+            ],
+            "parent" : {
+              "args" : [ ],
+              "entity_id" : ""
+            },
+            "name" : "dscl",
+            "pid" : 14291,
+            "args_count" : 4,
+            "entity_id" : "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE0MjkxLTEzMjU0OTQzOTkxLjMyMjAwMzAwMA==",
+            "command_line" : "dscl /Active Directory/EXAMPLECORP/EXAMPLECORP.pvt/ -read /Groups/Domain Admins",
+            "executable" : "/usr/bin/dscl",
+            "hash" : {
+              "sha1" : "852e8ef912d5d5ced4d2dd0667bf1961c3077ff4",
+              "sha256" : "f136c804700fd71f59b5eaf3080133ba412fcb3c499eafa1d73f78de2c3e642b",
+              "md5" : "03e1a484b3c3cfa27bc1a8073216a3cf"
+            }
+          },
+          "message" : "Endpoint process event",
+          "@timestamp" : "2021-01-12T16:53:11.322003Z",
+          "ecs" : {
+            "version" : "1.5.0"
+          },
+          "data_stream" : {
+            "namespace" : "default",
+            "type" : "logs",
+            "dataset" : "endpoint.events.process"
+          },
+          "elastic" : {
+            "agent" : {
+              "id" : "bbc973a1-6626-414a-88e5-43be8d909777"
+            }
+          },
+          "host" : {
+            "hostname" : "Sisis-MacBook-Pro.local",
+            "os" : {
+              "Ext" : {
+                "variant" : "macOS"
+              },
+              "kernel" : "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+              "name" : "macOS",
+              "family" : "macos",
+              "version" : "10.15.3",
+              "platform" : "macos",
+              "full" : "macOS 10.15.3"
+            },
+            "ip" : [
+              "127.0.0.1",
+              "::1",
+              "fe80::1",
+              "fe80::aede:48ff:fe00:1122",
+              "192.168.178.59",
+              "fe80::1830:c57a:1313:130b",
+              "2a02:a210:2302:b100:101c:31bc:4822:42cb",
+              "2a02:a210:2302:b100:314a:8813:f022:f45f",
+              "fe80::7cba:b6ff:feee:dd07",
+              "fe80::c19f:ad51:9312:adfd",
+              "fe80::7610:f180:3dda:a15f"
+            ],
+            "name" : "Sisis-MacBook-Pro.local",
+            "architecture" : "x86_64"
+          },
+          "event" : {
+            "sequence" : 102972,
+            "ingested" : "2021-01-12T16:53:53.917679658Z",
+            "created" : "2021-01-12T16:53:11.322003Z",
+            "kind" : "event",
+            "module" : "endpoint",
+            "action" : "exec",
+            "id" : "LzkFKysBSmcwOUEj+++++XPB",
+            "category" : [
+              "process"
+            ],
+            "type" : [
+              "start"
+            ],
+            "dataset" : "endpoint.events.process"
+          },
+          "user" : {
+            "Ext" : {
+              "real" : {
+                "name" : "sisi",
+                "id" : 501
+              }
+            },
+            "name" : "sisi",
+            "id" : 501
+          },
+          "group" : {
+            "Ext" : {
+              "real" : {
+                "name" : "staff",
+                "id" : 20
+              }
+            },
+            "name" : "staff",
+            "id" : 20
+          }
+        }
+}
+
+
+{
+        "_index" : ".ds-logs-endpoint.events.process-default-000003",
+        "_id" : "ZG118HYBORzSN0EUVIUX",
+        "_source" : {
+          "agent" : {
+            "id" : "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+            "type" : "endpoint",
+            "version" : "7.10.1"
+          },
+          "process" : {
+            "Ext" : {
+              "ancestry" : [
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NTMtMTMyNTQ4MjU1MTIuOTIyMDg5MDAw",
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NTItMTMyNTQ4MjU1MTIuNTc4MDI0MDAw",
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NTItMTMyNTQ4MjU1MTIuNTc3MDU2MDAw",
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NDMtMTMyNTQ4MjU0OTguMjEwMTMyMDAw",
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NDMtMTMyNTQ4MjU0OTguMjA4MTc2MDAw",
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NDItMTMyNTQ4MjU0OTguMTgzNjYyMDAw",
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NDItMTMyNTQ4MjU0OTguMTgxMzYzMDAw",
+                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIwNDktMTMyNTQ3NTc4OTEuOTQ2MTI3MDAw"
+              ]
+            },
+            "args" : [
+              "dscl",
+              ".",
+              "-list",
+              "/Users"
+            ],
+            "parent" : {
+              "args" : [ ],
+              "name" : "bash",
+              "pid" : 7852,
+              "entity_id" : "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NTMtMTMyNTQ4MjU1MTIuOTIyMDg5MDAw",
+              "executable" : "/bin/bash"
+            },
+            "name" : "dscl",
+            "pid" : 7853,
+            "args_count" : 4,
+            "entity_id" : "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTc4NTMtMTMyNTQ4MjU1MTIuOTI2MzEzMDAw",
+            "command_line" : "dscl . -list /Users",
+            "executable" : "/usr/bin/dscl",
+            "hash" : {
+              "sha1" : "852e8ef912d5d5ced4d2dd0667bf1961c3077ff4",
+              "sha256" : "f136c804700fd71f59b5eaf3080133ba412fcb3c499eafa1d73f78de2c3e642b",
+              "md5" : "03e1a484b3c3cfa27bc1a8073216a3cf"
+            }
+          },
+          "message" : "Endpoint process event",
+          "@timestamp" : "2021-01-11T07:58:32.926313Z",
+          "ecs" : {
+            "version" : "1.5.0"
+          },
+          "data_stream" : {
+            "namespace" : "default",
+            "type" : "logs",
+            "dataset" : "endpoint.events.process"
+          },
+          "elastic" : {
+            "agent" : {
+              "id" : "bbc973a1-6626-414a-88e5-43be8d909777"
+            }
+          },
+          "host" : {
+            "hostname" : "Sisis-MacBook-Pro.local",
+            "os" : {
+              "Ext" : {
+                "variant" : "macOS"
+              },
+              "kernel" : "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+              "name" : "macOS",
+              "family" : "macos",
+              "version" : "10.15.3",
+              "platform" : "macos",
+              "full" : "macOS 10.15.3"
+            },
+            "ip" : [
+              "127.0.0.1",
+              "::1",
+              "fe80::1",
+              "fe80::aede:48ff:fe00:1122",
+              "192.168.178.59",
+              "fe80::8eb:a596:5367:51fc",
+              "2a02:a210:2302:b100:101c:31bc:4822:42cb",
+              "2a02:a210:2302:b100:71ca:298:9035:8308",
+              "fe80::b8c2:dfff:fef9:673",
+              "fe80::10f1:a73d:200e:759c",
+              "fe80::f908:f796:ebc2:41df"
+            ],
+            "name" : "Sisis-MacBook-Pro.local",
+            "architecture" : "x86_64"
+          },
+          "event" : {
+            "sequence" : 52293,
+            "ingested" : "2021-01-11T07:59:49.768070551Z",
+            "created" : "2021-01-11T07:58:32.926313Z",
+            "kind" : "event",
+            "module" : "endpoint",
+            "action" : "exec",
+            "id" : "LzfDp/MTAw06KdgE+++++FFx",
+            "category" : [
+              "process"
+            ],
+            "type" : [
+              "start"
+            ],
+            "dataset" : "endpoint.events.process"
+          },
+          "user" : {
+            "Ext" : {
+              "real" : {
+                "name" : "sisi",
+                "id" : 501
+              }
+            },
+            "name" : "sisi",
+            "id" : 501
+          },
+          "group" : {
+            "Ext" : {
+              "real" : {
+                "name" : "staff",
+                "id" : 20
+              }
+            },
+            "name" : "staff",
+            "id" : 20
+          }
+        }
+}
