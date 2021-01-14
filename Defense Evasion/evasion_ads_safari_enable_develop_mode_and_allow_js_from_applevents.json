@@ -1,0 +1,256 @@
+{
+	"_index": ".ds-logs-endpoint.events.process-default-000003",
+	"_type": "_doc",
+	"_id": "jnOJAXcBORzSN0EU1tAQ",
+	"_version": 1,
+	"_score": null,
+	"_source": {
+		"agent": {
+			"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+			"type": "endpoint",
+			"version": "7.10.1"
+		},
+		"process": {
+			"Ext": {
+				"ancestry": [
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIzNDctMTMyNTUxMTIxMjguODk5MDk5MDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIzNDYtMTMyNTUxMTIxMjguODU4MDQ2MDAw"
+				]
+			},
+			"args": [
+				"/usr/bin/defaults",
+				"write",
+				"com.apple.Safari",
+				"IncludeDevelopMenu",
+				"-int",
+				"1"
+			],
+			"parent": {
+				"args": [],
+				"name": "sudo",
+				"pid": 2346,
+				"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIzNDctMTMyNTUxMTIxMjguODk5MDk5MDAw",
+				"executable": "/usr/bin/sudo"
+			},
+			"name": "defaults",
+			"pid": 2347,
+			"args_count": 6,
+			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIzNDctMTMyNTUxMTIxMjguOTAyMTM1MDAw",
+			"command_line": "/usr/bin/defaults write com.apple.Safari IncludeDevelopMenu -int 1",
+			"executable": "/usr/bin/defaults",
+			"hash": {
+				"sha1": "60f78e3701c171f2d85370fbece52f867da55465",
+				"sha256": "877aa34eb4948e0e24e02da84212056ad43813c7247c33bfce2045b773aacfaf",
+				"md5": "1c16b658c04eefc1668911808b849093"
+			}
+		},
+		"message": "Endpoint process event",
+		"@timestamp": "2021-01-14T15:35:28.902135Z",
+		"ecs": {
+			"version": "1.5.0"
+		},
+		"data_stream": {
+			"namespace": "default",
+			"type": "logs",
+			"dataset": "endpoint.events.process"
+		},
+		"elastic": {
+			"agent": {
+				"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+			}
+		},
+		"host": {
+			"hostname": "Sisis-MacBook-Pro.local",
+			"os": {
+				"Ext": {
+					"variant": "macOS"
+				},
+				"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+				"name": "macOS",
+				"family": "macos",
+				"version": "10.15.3",
+				"platform": "macos",
+				"full": "macOS 10.15.3"
+			},
+			"ip": [
+				"127.0.0.1",
+				"::1",
+				"fe80::1",
+				"fe80::aede:48ff:fe00:1122",
+				"192.168.178.59",
+				"fe80::8ee:7a0d:4389:9964",
+				"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+				"2a02:a210:2302:b100:1429:c642:54f2:662d",
+				"fe80::c8c0:f8ff:fe5b:e6ed",
+				"fe80::f921:7982:8ac4:506f",
+				"fe80::c024:1c64:cde4:c9d6"
+			],
+			"name": "Sisis-MacBook-Pro.local",
+			"architecture": "x86_64"
+		},
+		"event": {
+			"sequence": 14403,
+			"ingested": "2021-01-14T15:35:46.445398299Z",
+			"created": "2021-01-14T15:35:28.902135Z",
+			"kind": "event",
+			"module": "endpoint",
+			"action": "exec",
+			"id": "M+/DG+Vxcn+rwQl9+++++2kE",
+			"category": [
+				"process"
+			],
+			"type": [
+				"start"
+			],
+			"dataset": "endpoint.events.process"
+		},
+		"user": {
+			"Ext": {
+				"real": {
+					"name": "sisi",
+					"id": 501
+				}
+			},
+			"name": "sisi",
+			"id": 501
+		},
+		"group": {
+			"Ext": {
+				"real": {
+					"name": "staff",
+					"id": 20
+				}
+			},
+			"name": "staff",
+			"id": 20
+		}
+	}
+}
+
+{
+	"_index": ".ds-logs-endpoint.events.process-default-000003",
+	"_type": "_doc",
+	"_id": "GGuLAXcBimKzADJjrbU0",
+	"_version": 1,
+	"_score": null,
+	"_source": {
+		"agent": {
+			"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+			"type": "endpoint",
+			"version": "7.10.1"
+		},
+		"process": {
+			"Ext": {
+				"ancestry": [
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI0MjAtMTMyNTUxMTIyNTguMzc3OTkzMDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI0MTktMTMyNTUxMTIyNTguMzYxMjU2MDAw"
+				]
+			},
+			"args": [
+				"/usr/bin/defaults",
+				"write",
+				"com.apple.Safari",
+				"NSUserKeyEquivalents",
+				"\"Allow Javascript from Apple Events\"=\"^@~d\";"
+			],
+			"parent": {
+				"args": [],
+				"name": "sudo",
+				"pid": 2419,
+				"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI0MjAtMTMyNTUxMTIyNTguMzc3OTkzMDAw",
+				"executable": "/usr/bin/sudo"
+			},
+			"name": "defaults",
+			"pid": 2420,
+			"args_count": 5,
+			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI0MjAtMTMyNTUxMTIyNTguMzc4NzI1MDAw",
+			"command_line": "/usr/bin/defaults write com.apple.Safari NSUserKeyEquivalents \"Allow Javascript from Apple Events\"=\"^@~d\";",
+			"executable": "/usr/bin/defaults",
+			"hash": {
+				"sha1": "60f78e3701c171f2d85370fbece52f867da55465",
+				"sha256": "877aa34eb4948e0e24e02da84212056ad43813c7247c33bfce2045b773aacfaf",
+				"md5": "1c16b658c04eefc1668911808b849093"
+			}
+		},
+		"message": "Endpoint process event",
+		"@timestamp": "2021-01-14T15:37:38.378725Z",
+		"ecs": {
+			"version": "1.5.0"
+		},
+		"data_stream": {
+			"namespace": "default",
+			"type": "logs",
+			"dataset": "endpoint.events.process"
+		},
+		"elastic": {
+			"agent": {
+				"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+			}
+		},
+		"host": {
+			"hostname": "Sisis-MacBook-Pro.local",
+			"os": {
+				"Ext": {
+					"variant": "macOS"
+				},
+				"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+				"name": "macOS",
+				"family": "macos",
+				"version": "10.15.3",
+				"platform": "macos",
+				"full": "macOS 10.15.3"
+			},
+			"ip": [
+				"127.0.0.1",
+				"::1",
+				"fe80::1",
+				"fe80::aede:48ff:fe00:1122",
+				"192.168.178.59",
+				"fe80::8ee:7a0d:4389:9964",
+				"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+				"2a02:a210:2302:b100:1429:c642:54f2:662d",
+				"fe80::c8c0:f8ff:fe5b:e6ed",
+				"fe80::f921:7982:8ac4:506f",
+				"fe80::c024:1c64:cde4:c9d6"
+			],
+			"name": "Sisis-MacBook-Pro.local",
+			"architecture": "x86_64"
+		},
+		"event": {
+			"sequence": 14666,
+			"ingested": "2021-01-14T15:37:47.058656333Z",
+			"created": "2021-01-14T15:37:38.378725Z",
+			"kind": "event",
+			"module": "endpoint",
+			"action": "exec",
+			"id": "M+/DG+Vxcn+rwQl9+++++2qU",
+			"category": [
+				"process"
+			],
+			"type": [
+				"start"
+			],
+			"dataset": "endpoint.events.process"
+		},
+		"user": {
+			"Ext": {
+				"real": {
+					"name": "sisi",
+					"id": 501
+				}
+			},
+			"name": "sisi",
+			"id": 501
+		},
+		"group": {
+			"Ext": {
+				"real": {
+					"name": "staff",
+					"id": 20
+				}
+			},
+			"name": "staff",
+			"id": 20
+		}
+	}
+}
