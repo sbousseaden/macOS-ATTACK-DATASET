@@ -1,0 +1,133 @@
+{
+	"_index": ".ds-logs-endpoint.events.process-default-000003",
+	"_type": "_doc",
+	"_id": "hm0oA3cBimKzADJjQoUL",
+	"_version": 1,
+	"_score": null,
+	"_source": {
+		"agent": {
+			"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+			"type": "endpoint",
+			"version": "7.10.1"
+		},
+		"process": {
+			"Ext": {
+				"ancestry": [
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTg3NzQtMTMyNTUxMzkyODUuNjI4MjUyMDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTgwMTUtMTMyNTUxMjYyODUuODkwMDM0MDAw"
+				]
+			},
+			"args": [
+				"/usr/libexec/security_authtrampoline",
+				"/System/Library/ScriptingAdditions/StandardAdditions.osax/Contents/MacOS/uid",
+				"auth",
+				"10",
+				"/System/Library/ScriptingAdditions/StandardAdditions.osax/Contents/MacOS/uid",
+				"/bin/sh",
+				"-c",
+				"launchctl",
+				"load",
+				"-w",
+				"/Users/sisi/Library/LaunchAgents/com.apple.bla.plist"
+			],
+			"parent": {
+				"args": [],
+				"name": "Python",
+				"pid": 8015,
+				"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTg3NzQtMTMyNTUxMzkyODUuNjI4MjUyMDAw",
+				"executable": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python"
+			},
+			"name": "security_authtrampoline",
+			"pid": 8774,
+			"args_count": 11,
+			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTg3NzQtMTMyNTUxMzkyODUuNjMwMTg3MDAw",
+			"command_line": "/usr/libexec/security_authtrampoline /System/Library/ScriptingAdditions/StandardAdditions.osax/Contents/MacOS/uid auth 10 /System/Library/ScriptingAdditions/StandardAdditions.osax/Contents/MacOS/uid /bin/sh -c launchctl load -w /Users/sisi/Library/LaunchAgents/com.apple.bla.plist",
+			"executable": "/usr/libexec/security_authtrampoline",
+			"hash": {
+				"sha1": "4e4cc5a6827adb674ae03d556a07db6021a769bb",
+				"sha256": "c976c810d8a79cd058f2eb7fe1168c232162ee2722086b3a9f0d74794e1fa974",
+				"md5": "b6c9e394adad7bd688dc0e6513270eff"
+			}
+		},
+		"message": "Endpoint process event",
+		"@timestamp": "2021-01-14T23:08:05.630187Z",
+		"ecs": {
+			"version": "1.5.0"
+		},
+		"data_stream": {
+			"namespace": "default",
+			"type": "logs",
+			"dataset": "endpoint.events.process"
+		},
+		"elastic": {
+			"agent": {
+				"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+			}
+		},
+		"host": {
+			"hostname": "Sisis-MacBook-Pro.local",
+			"os": {
+				"Ext": {
+					"variant": "macOS"
+				},
+				"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+				"name": "macOS",
+				"family": "macos",
+				"version": "10.15.3",
+				"platform": "macos",
+				"full": "macOS 10.15.3"
+			},
+			"ip": [
+				"127.0.0.1",
+				"::1",
+				"fe80::1",
+				"fe80::aede:48ff:fe00:1122",
+				"192.168.178.59",
+				"fe80::8ee:7a0d:4389:9964",
+				"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+				"2a02:a210:2302:b100:e802:334:f7a4:dad0",
+				"fe80::c8c0:f8ff:fe5b:e6ed",
+				"fe80::f921:7982:8ac4:506f",
+				"fe80::c024:1c64:cde4:c9d6"
+			],
+			"name": "Sisis-MacBook-Pro.local",
+			"architecture": "x86_64"
+		},
+		"event": {
+			"sequence": 46590,
+			"ingested": "2021-01-14T23:08:25.993116214Z",
+			"created": "2021-01-14T23:08:05.630187Z",
+			"kind": "event",
+			"module": "endpoint",
+			"action": "exec",
+			"id": "M+/DG+Vxcn+rwQl9+++++Eic",
+			"category": [
+				"process"
+			],
+			"type": [
+				"start"
+			],
+			"dataset": "endpoint.events.process"
+		},
+		"user": {
+			"Ext": {
+				"real": {
+					"name": "sisi",
+					"id": 501
+				}
+			},
+			"name": "root",
+			"id": 501
+		},
+		"group": {
+			"Ext": {
+				"real": {
+					"name": "staff",
+					"id": 20
+				}
+			},
+			"name": "staff",
+			"id": 20
+		}
+	}
+}
