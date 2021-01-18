@@ -1,4 +1,139 @@
 {
+	"_index": ".ds-logs-endpoint.events.process-default-000003",
+	"_type": "_doc",
+	"_id": "SXNeAXcBORzSN0EU08u_",
+	"_version": 1,
+	"_score": null,
+	"_source": {
+		"agent": {
+			"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+			"type": "endpoint",
+			"version": "7.10.1"
+		},
+		"process": {
+			"Ext": {
+				"ancestry": [
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIwNjYtMTMyNTUxMDkyODEuMTAwOTQ0MDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5MjctMTMyNTUxMDkwNTguNjkzNzA4MDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5MjctMTMyNTUxMDkwNTguNjkyMDE0MDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5MjYtMTMyNTUxMDkwNTguNjY3NzY0MDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5MjYtMTMyNTUxMDkwNTguNjY1MjE4MDAw",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTcwMi0xMzI1NTEwNzA4OS4yNzY5ODcwMDA=",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTcwMi0xMzI1NTEwNzA4OS4yODE3MTcwMDA=",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTcwMi0xMzI1NTEwNzA4OS4yNzY4NzYwMDA=",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEtMTMyNTUxMDY2MjguMA==",
+					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTAtMTMyNTUxMDY2MjguMA=="
+				]
+			},
+			"args": [
+				"launchctl",
+				"setenv",
+				"HOME",
+				"/tmp"
+			],
+			"parent": {
+				"args": [],
+				"name": "zsh",
+				"pid": 1927,
+				"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIwNjYtMTMyNTUxMDkyODEuMTAwOTQ0MDAw",
+				"executable": "/bin/zsh"
+			},
+			"name": "launchctl",
+			"pid": 2066,
+			"args_count": 0,
+			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIwNjYtMTMyNTUxMDkyODEuMTAxOTQ2MDAw",
+			"command_line": "launchctl setenv HOME /tmp",
+			"executable": "/bin/launchctl",
+			"hash": {
+				"sha1": "bcf8716b232298acc691c2d545d9186184ec453e",
+				"sha256": "560931114b71ecc2a92ec4e727422b631f1b0dabbe02a37d175d2714a912ab18",
+				"md5": "8d09e9fb1a43dd0560f094efc3cbf012"
+			}
+		},
+		"message": "Endpoint process event",
+		"@timestamp": "2021-01-14T14:48:01.6044323Z",
+		"ecs": {
+			"version": "1.5.0"
+		},
+		"data_stream": {
+			"namespace": "default",
+			"type": "logs",
+			"dataset": "endpoint.events.process"
+		},
+		"elastic": {
+			"agent": {
+				"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+			}
+		},
+		"host": {
+			"hostname": "Sisis-MacBook-Pro.local",
+			"os": {
+				"Ext": {
+					"variant": "macOS"
+				},
+				"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+				"name": "macOS",
+				"family": "macos",
+				"version": "10.15.3",
+				"platform": "macos",
+				"full": "macOS 10.15.3"
+			},
+			"ip": [
+				"127.0.0.1",
+				"::1",
+				"fe80::1",
+				"fe80::aede:48ff:fe00:1122",
+				"192.168.178.59",
+				"fe80::8ee:7a0d:4389:9964",
+				"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+				"2a02:a210:2302:b100:1429:c642:54f2:662d",
+				"fe80::c8c0:f8ff:fe5b:e6ed",
+				"fe80::f921:7982:8ac4:506f",
+				"fe80::c024:1c64:cde4:c9d6"
+			],
+			"name": "Sisis-MacBook-Pro.local",
+			"architecture": "x86_64"
+		},
+		"event": {
+			"sequence": 12743,
+			"ingested": "2021-01-14T14:48:47.799563303Z",
+			"created": "2021-01-14T14:48:01.6044323Z",
+			"kind": "event",
+			"module": "endpoint",
+			"action": "end",
+			"id": "M+/DG+Vxcn+rwQl9+++++29V",
+			"category": [
+				"process"
+			],
+			"type": [
+				"end"
+			],
+			"dataset": "endpoint.events.process"
+		},
+		"user": {
+			"Ext": {
+				"real": {
+					"name": "sisi",
+					"id": 501
+				}
+			},
+			"name": "sisi",
+			"id": 501
+		},
+		"group": {
+			"Ext": {
+				"real": {
+					"name": "staff",
+					"id": 20
+				}
+			},
+			"name": "staff",
+			"id": 20
+		}
+	}
+}
+
+{
   "_index": ".ds-logs-endpoint.events.process-default-000003",
   "_type": "_doc",
   "_id": "0XdjAncBORzSN0EU8DhB",
