@@ -1,5 +1,5 @@
-{
-			{
+[
+	{
 	"_index": ".ds-logs-endpoint.events.file-default-000003",
 	"_id": "xW8i8nYBORzSN0EUOCt6",
 	"_source": {
@@ -109,7 +109,7 @@
 		}
 	}
 },
-			{
+{
 	"_index": ".ds-logs-endpoint.events.file-default-000003",
 	"_id": "3G8k8nYBORzSN0EUEjkN",
 	"_source": {
@@ -219,4 +219,4 @@
 		}
 	}
 }
-}
+]

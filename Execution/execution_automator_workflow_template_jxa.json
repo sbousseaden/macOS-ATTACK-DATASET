@@ -1,4 +1,5 @@
-{
+[
+	{
 	"_index": ".ds-logs-endpoint.events.process-default-000003",
 	"_id": "zM7VEHcBORzSN0EUj9nJ",
 	"_source": {
@@ -121,7 +122,6 @@
 		}
 	}
 },
-
 {
 	"_index": ".ds-logs-endpoint.events.process-default-000003",
 	"_id": "T87VEHcBORzSN0EUk9tK",
@@ -243,7 +243,7 @@
 		}
 	}
 },
-          {
+{
 	"_index": ".ds-logs-endpoint.events.process-default-000003",
 	"_id": "3c7VEHcBORzSN0EUltwD",
 	"_source": {
@@ -350,7 +350,7 @@
 		}
 	}
 },
-          {
+{
 	"_index": ".ds-logs-endpoint.events.process-default-000003",
 	"_id": "wM7VEHcBORzSN0EUouRm",
 	"_source": {
@@ -472,3 +472,4 @@
 		}
 	}
 }
+]

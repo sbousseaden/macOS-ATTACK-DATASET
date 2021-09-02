@@ -1,4 +1,4 @@
-{
+[{
   "_index": ".ds-logs-endpoint.events.process-default-000002",
   "_type": "_doc",
   "_id": "KmiU3HYBORzSN0EUWFS3",
@@ -126,8 +126,7 @@
       "id": 20
     }
   }
-  
-  
+},
 {
   "_index": ".ds-logs-endpoint.events.process-default-000003",
   "_type": "_doc",
@@ -161,7 +160,7 @@
       ],
       "parent": {
         "args": [],
-        "name": "xpcproxy
+        "name": "xpcproxy",
         "pid": 18655,
         "entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE4NjU4LTEzMjU1MDE2NTAwLjkzNDYzNjAwMA==",
         "executable": "/tmp/xpcproxy"
@@ -260,3 +259,4 @@
     }
   }
 }
+]

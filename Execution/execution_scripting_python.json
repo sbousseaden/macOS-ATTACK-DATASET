@@ -1,4 +1,5 @@
-{
+[
+	{
 	"_index": ".ds-logs-endpoint.events.process-default-000003",
 	"_type": "_doc",
 	"_id": "z3MBAXcBORzSN0EUCAx9",
@@ -124,8 +125,7 @@
 			"id": 20
 		}
 	}
-}
-
+},
 {
         "_index" : ".ds-logs-endpoint.events.process-default-000003",
         "_id" : "nXHQ-3YBORzSN0EU5nl7",
@@ -145,7 +145,7 @@
             "args" : [
               "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python",
               "-c",
-              """import sys, setuptools, tokenize; sys.argv[0] = '/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py'; __file__='/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))""",
+              "import sys, setuptools, tokenize; sys.argv[0] = '/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py'; __file__='/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))",
               "egg_info",
               "--egg-base",
               "/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-pip-egg-info-33eEsM"
@@ -161,7 +161,7 @@
             "pid" : 18259,
             "args_count" : 6,
             "entity_id" : "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE4MjU5LTEzMjU1MDE2MDYzLjY5Mzk3MDAw",
-            "command_line" : """/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python -c import sys, setuptools, tokenize; sys.argv[0] = '/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py'; __file__='/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec')) egg_info --egg-base /private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-pip-egg-info-33eEsM""",
+            "command_line" : "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python -c import sys, setuptools, tokenize; sys.argv[0] = '/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py'; __file__='/private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-install-sWdip9/future/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec')) egg_info --egg-base /private/var/folders/dl/sl_040js36q6tmyb7n9trrh80000gn/T/pip-pip-egg-info-33eEsM",
             "executable" : "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python",
             "hash" : {
               "sha1" : "88df5a34c28a4030118b06a4a6bf1e1b21dee260",
@@ -251,3 +251,4 @@
           }
         }
       }
+	]

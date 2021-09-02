@@ -14,7 +14,7 @@
             "args" : [
               "osascript",
               "-e",
-              """tell application "System Events" to make login item at end with properties {name: "test", path:"/System/Applications/Calculator.app/Contents/MacOS/Calculator", hidden:true}"""
+              "tell application \"System Events\" to make login item at end with properties {name: \"test\", path:\"/System/Applications/Calculator.app/Contents/MacOS/Calculator\", hidden:true}"
             ],
             "parent" : {
               "args" : [ ],
@@ -24,7 +24,7 @@
             "pid" : 2075,
             "args_count" : 3,
             "entity_id" : "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIwNzUtMTMyNTQwOTc5MzIuODIxMDYxMDAw",
-            "command_line" : """osascript -e tell application "System Events" to make login item at end with properties {name: "test", path:"/System/Applications/Calculator.app/Contents/MacOS/Calculator", hidden:true}""",
+            "command_line" : "osascript -e tell application \"System Events\" to make login item at end with properties {name: \"test\", path:\"/System/Applications/Calculator.app/Contents/MacOS/Calculator\", hidden:true}",
             "executable" : "/usr/bin/osascript",
             "hash" : {
               "sha1" : "9f938559a0956dfae4ba48eaf7378dcb799761b5",

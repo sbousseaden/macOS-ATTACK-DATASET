@@ -1,4 +1,5 @@
-{
+[
+  {
   "is_partial" : false,
   "is_running" : false,
   "took" : 72,
@@ -451,8 +452,7 @@
       }
     ]
   }
-}
-
+},
 {
   "is_partial" : false,
   "is_running" : false,
@@ -583,3 +583,4 @@
     ]
   }
 }
+]
