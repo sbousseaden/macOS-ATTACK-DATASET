@@ -1,4 +1,5 @@
-   {
+[
+ {
         "_index" : ".ds-logs-endpoint.events.process-default-000002",
         "_id" : "JWWdzXYBORzSN0EUOvrF",
         "_source" : {
@@ -241,3 +242,4 @@
           }
         }
       }
+    ]

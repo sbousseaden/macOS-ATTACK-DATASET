@@ -1,4 +1,5 @@
-{
+[
+	{
 	"_index": ".ds-logs-endpoint.events.process-default-000003",
 	"_type": "_doc",
 	"_id": "jnOJAXcBORzSN0EU1tAQ",
@@ -125,8 +126,7 @@
 			"id": 20
 		}
 	}
-}
-
+},
 {
 	"_index": ".ds-logs-endpoint.events.process-default-000003",
 	"_type": "_doc",
@@ -254,3 +254,4 @@
 		}
 	}
 }
+]git
