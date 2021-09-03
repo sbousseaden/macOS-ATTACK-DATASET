@@ -1,107 +1,115 @@
 {
-        "_index" : ".ds-logs-endpoint.events.file-default-000003",
-        "_id" : "9XG--3YBORzSN0EUGADD",
-        "_source" : {
-          "agent" : {
-            "id" : "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
-            "type" : "endpoint",
-            "version" : "7.10.1"
+  "tactic": "Defense_Evasion",
+  "techniques": [
+    "T1556.003"
+  ],
+  "documents": [
+    {
+      "_index": ".ds-logs-endpoint.events.file-default-000003",
+      "_id": "9XG--3YBORzSN0EUGADD",
+      "_source": {
+        "agent": {
+          "id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+          "type": "endpoint",
+          "version": "7.10.1"
+        },
+        "process": {
+          "Ext": {
+            "ancestry": [
+              "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE1NzY4LTEzMjU1MDE0ODkzLjQ5NzM4NDAwMA=="
+            ]
           },
-          "process" : {
-            "Ext" : {
-              "ancestry" : [
-                "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE1NzY4LTEzMjU1MDE0ODkzLjQ5NzM4NDAwMA=="
-              ]
+          "name": "sudo",
+          "pid": 15779,
+          "entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE1Nzc5LTEzMjU1MDE0ODk3LjI0MzI3MjAwMA==",
+          "executable": "/usr/bin/sudo"
+        },
+        "message": "Endpoint file event",
+        "@timestamp": "2021-01-13T12:34:57.245584Z",
+        "file": {
+          "path": "/private/etc/pam.d/login",
+          "extension": "d/login",
+          "name": "login"
+        },
+        "ecs": {
+          "version": "1.5.0"
+        },
+        "data_stream": {
+          "namespace": "default",
+          "type": "logs",
+          "dataset": "endpoint.events.file"
+        },
+        "elastic": {
+          "agent": {
+            "id": "bbc973a1-6626-414a-88e5-43be8d909777"
+          }
+        },
+        "host": {
+          "hostname": "Sisis-MacBook-Pro.local",
+          "os": {
+            "Ext": {
+              "variant": "macOS"
             },
-            "name" : "sudo",
-            "pid" : 15779,
-            "entity_id" : "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE1Nzc5LTEzMjU1MDE0ODk3LjI0MzI3MjAwMA==",
-            "executable" : "/usr/bin/sudo"
+            "kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+            "name": "macOS",
+            "family": "macos",
+            "version": "10.15.3",
+            "platform": "macos",
+            "full": "macOS 10.15.3"
           },
-          "message" : "Endpoint file event",
-          "@timestamp" : "2021-01-13T12:34:57.245584Z",
-          "file" : {
-            "path" : "/private/etc/pam.d/login",
-            "extension" : "d/login",
-            "name" : "login"
-          },
-          "ecs" : {
-            "version" : "1.5.0"
-          },
-          "data_stream" : {
-            "namespace" : "default",
-            "type" : "logs",
-            "dataset" : "endpoint.events.file"
-          },
-          "elastic" : {
-            "agent" : {
-              "id" : "bbc973a1-6626-414a-88e5-43be8d909777"
+          "ip": [
+            "127.0.0.1",
+            "::1",
+            "fe80::1",
+            "fe80::aede:48ff:fe00:1122",
+            "192.168.178.59",
+            "fe80::1830:c57a:1313:130b",
+            "2a02:a210:2302:b100:101c:31bc:4822:42cb",
+            "2a02:a210:2302:b100:6c5a:7245:7828:3a1f",
+            "fe80::7cba:b6ff:feee:dd07",
+            "fe80::c19f:ad51:9312:adfd",
+            "fe80::7610:f180:3dda:a15f"
+          ],
+          "name": "Sisis-MacBook-Pro.local",
+          "architecture": "x86_64"
+        },
+        "event": {
+          "sequence": 114819,
+          "ingested": "2021-01-13T12:35:08.096337402Z",
+          "created": "2021-01-13T12:34:57.245584Z",
+          "kind": "event",
+          "module": "endpoint",
+          "action": "modification",
+          "id": "LzkFKysBSmcwOUEj+++++bjh",
+          "category": [
+            "file"
+          ],
+          "type": [
+            "change"
+          ],
+          "dataset": "endpoint.events.file"
+        },
+        "user": {
+          "Ext": {
+            "real": {
+              "name": "sisi",
+              "id": 501
             }
           },
-          "host" : {
-            "hostname" : "Sisis-MacBook-Pro.local",
-            "os" : {
-              "Ext" : {
-                "variant" : "macOS"
-              },
-              "kernel" : "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
-              "name" : "macOS",
-              "family" : "macos",
-              "version" : "10.15.3",
-              "platform" : "macos",
-              "full" : "macOS 10.15.3"
-            },
-            "ip" : [
-              "127.0.0.1",
-              "::1",
-              "fe80::1",
-              "fe80::aede:48ff:fe00:1122",
-              "192.168.178.59",
-              "fe80::1830:c57a:1313:130b",
-              "2a02:a210:2302:b100:101c:31bc:4822:42cb",
-              "2a02:a210:2302:b100:6c5a:7245:7828:3a1f",
-              "fe80::7cba:b6ff:feee:dd07",
-              "fe80::c19f:ad51:9312:adfd",
-              "fe80::7610:f180:3dda:a15f"
-            ],
-            "name" : "Sisis-MacBook-Pro.local",
-            "architecture" : "x86_64"
+          "name": "root",
+          "id": 0
+        },
+        "group": {
+          "Ext": {
+            "real": {
+              "name": "staff",
+              "id": 20
+            }
           },
-          "event" : {
-            "sequence" : 114819,
-            "ingested" : "2021-01-13T12:35:08.096337402Z",
-            "created" : "2021-01-13T12:34:57.245584Z",
-            "kind" : "event",
-            "module" : "endpoint",
-            "action" : "modification",
-            "id" : "LzkFKysBSmcwOUEj+++++bjh",
-            "category" : [
-              "file"
-            ],
-            "type" : [
-              "change"
-            ],
-            "dataset" : "endpoint.events.file"
-          },
-          "user" : {
-            "Ext" : {
-              "real" : {
-                "name" : "sisi",
-                "id" : 501
-              }
-            },
-            "name" : "root",
-            "id" : 0
-          },
-          "group" : {
-            "Ext" : {
-              "real" : {
-                "name" : "staff",
-                "id" : 20
-              }
-            },
-            "name" : "staff",
-            "id" : 20
-          }
+          "name": "staff",
+          "id": 20
         }
+      }
+    }
+  ]
 }
