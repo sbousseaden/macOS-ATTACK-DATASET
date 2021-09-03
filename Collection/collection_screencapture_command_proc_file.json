@@ -1,238 +1,238 @@
 {
-  "tactic": "Collection",
-  "techniques": [
-    "T1113"
-  ],
-  "documents": [
-    {
-      "_index": ".ds-logs-endpoint.events.process-default-000003",
-      "_type": "_doc",
-      "_id": "KGn0-3YBimKzADJjEsoL",
-      "_version": 1,
-      "_score": null,
-      "_source": {
-        "agent": {
-          "id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
-          "type": "endpoint",
-          "version": "7.10.1"
-        },
-        "process": {
-          "Ext": {
-            "ancestry": []
-          },
-          "args": [
-            "screencapture",
-            "-x",
-            "/tmp/.stage/001.png"
-          ],
-          "parent": {
-            "args": [],
-            "entity_id": ""
-          },
-          "name": "screencapture",
-          "pid": 18852,
-          "args_count": 3,
-          "entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE4ODUyLTEzMjU1MDE4NDMxLjQwNDA4MTAwMA==",
-          "command_line": "screencapture -x /tmp/.stage/001.png",
-          "executable": "/usr/sbin/screencapture",
-          "hash": {
-            "sha1": "d29e0e9f84f9cb24ca2b94558c9a8e96695ee4a7",
-            "sha256": "0685af74f86bfc9a789cb19eef2188c3cbeb2cd8f976e34d2e1fa799bd336a2b",
-            "md5": "5805faed1199e5d84f8f68d29b078ab7"
-          }
-        },
-        "message": "Endpoint process event",
-        "@timestamp": "2021-01-13T13:33:51.404081Z",
-        "ecs": {
-          "version": "1.5.0"
-        },
-        "data_stream": {
-          "namespace": "default",
-          "type": "logs",
-          "dataset": "endpoint.events.process"
-        },
-        "elastic": {
-          "agent": {
-            "id": "bbc973a1-6626-414a-88e5-43be8d909777"
-          }
-        },
-        "host": {
-          "hostname": "Sisis-MacBook-Pro.local",
-          "os": {
-            "Ext": {
-              "variant": "macOS"
-            },
-            "kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
-            "name": "macOS",
-            "family": "macos",
-            "version": "10.15.3",
-            "platform": "macos",
-            "full": "macOS 10.15.3"
-          },
-          "ip": [
-            "127.0.0.1",
-            "::1",
-            "fe80::1",
-            "fe80::aede:48ff:fe00:1122",
-            "192.168.178.59",
-            "fe80::1830:c57a:1313:130b",
-            "2a02:a210:2302:b100:101c:31bc:4822:42cb",
-            "2a02:a210:2302:b100:6c5a:7245:7828:3a1f",
-            "fe80::7cba:b6ff:feee:dd07",
-            "fe80::c19f:ad51:9312:adfd",
-            "fe80::7610:f180:3dda:a15f"
-          ],
-          "name": "Sisis-MacBook-Pro.local",
-          "id": "D9C40E3D-DFD7-5382-81EC-C31215E704CE",
-          "architecture": "x86_64"
-        },
-        "event": {
-          "sequence": 146429,
-          "ingested": "2021-01-13T13:34:05.322305478Z",
-          "created": "2021-01-13T13:33:51.404081Z",
-          "kind": "event",
-          "module": "endpoint",
-          "action": "exec",
-          "id": "LzkFKysBSmcwOUEj+++++luw",
-          "category": [
-            "process"
-          ],
-          "type": [
-            "start"
-          ],
-          "dataset": "endpoint.events.process"
-        },
-        "user": {
-          "Ext": {
-            "real": {
-              "name": "sisi",
-              "id": 501
+    "tactic": "Collection",
+    "techniques": [
+        "T1113"
+    ],
+    "documents": [
+        {
+            "_index": ".ds-logs-endpoint.events.process-default-000003",
+            "_type": "_doc",
+            "_id": "KGn0-3YBimKzADJjEsoL",
+            "_version": 1,
+            "_score": null,
+            "_source": {
+                "agent": {
+                    "id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+                    "type": "endpoint",
+                    "version": "7.10.1"
+                },
+                "process": {
+                    "Ext": {
+                        "ancestry": []
+                    },
+                    "args": [
+                        "screencapture",
+                        "-x",
+                        "/tmp/.stage/001.png"
+                    ],
+                    "parent": {
+                        "args": [],
+                        "entity_id": ""
+                    },
+                    "name": "screencapture",
+                    "pid": 18852,
+                    "args_count": 3,
+                    "entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE4ODUyLTEzMjU1MDE4NDMxLjQwNDA4MTAwMA==",
+                    "command_line": "screencapture -x /tmp/.stage/001.png",
+                    "executable": "/usr/sbin/screencapture",
+                    "hash": {
+                        "sha1": "d29e0e9f84f9cb24ca2b94558c9a8e96695ee4a7",
+                        "sha256": "0685af74f86bfc9a789cb19eef2188c3cbeb2cd8f976e34d2e1fa799bd336a2b",
+                        "md5": "5805faed1199e5d84f8f68d29b078ab7"
+                    }
+                },
+                "message": "Endpoint process event",
+                "@timestamp": "2021-01-13T13:33:51.404081Z",
+                "ecs": {
+                    "version": "1.5.0"
+                },
+                "data_stream": {
+                    "namespace": "default",
+                    "type": "logs",
+                    "dataset": "endpoint.events.process"
+                },
+                "elastic": {
+                    "agent": {
+                        "id": "bbc973a1-6626-414a-88e5-43be8d909777"
+                    }
+                },
+                "host": {
+                    "hostname": "Sisis-MacBook-Pro.local",
+                    "os": {
+                        "Ext": {
+                            "variant": "macOS"
+                        },
+                        "kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+                        "name": "macOS",
+                        "family": "macos",
+                        "version": "10.15.3",
+                        "platform": "macos",
+                        "full": "macOS 10.15.3"
+                    },
+                    "ip": [
+                        "127.0.0.1",
+                        "::1",
+                        "fe80::1",
+                        "fe80::aede:48ff:fe00:1122",
+                        "192.168.178.59",
+                        "fe80::1830:c57a:1313:130b",
+                        "2a02:a210:2302:b100:101c:31bc:4822:42cb",
+                        "2a02:a210:2302:b100:6c5a:7245:7828:3a1f",
+                        "fe80::7cba:b6ff:feee:dd07",
+                        "fe80::c19f:ad51:9312:adfd",
+                        "fe80::7610:f180:3dda:a15f"
+                    ],
+                    "name": "Sisis-MacBook-Pro.local",
+                    "id": "D9C40E3D-DFD7-5382-81EC-C31215E704CE",
+                    "architecture": "x86_64"
+                },
+                "event": {
+                    "sequence": 146429,
+                    "ingested": "2021-01-13T13:34:05.322305478Z",
+                    "created": "2021-01-13T13:33:51.404081Z",
+                    "kind": "event",
+                    "module": "endpoint",
+                    "action": "exec",
+                    "id": "LzkFKysBSmcwOUEj+++++luw",
+                    "category": [
+                        "process"
+                    ],
+                    "type": [
+                        "start"
+                    ],
+                    "dataset": "endpoint.events.process"
+                },
+                "user": {
+                    "Ext": {
+                        "real": {
+                            "name": "sisi",
+                            "id": 501
+                        }
+                    },
+                    "name": "sisi",
+                    "id": 501
+                },
+                "group": {
+                    "Ext": {
+                        "real": {
+                            "name": "staff",
+                            "id": 20
+                        }
+                    },
+                    "name": "staff",
+                    "id": 20
+                }
             }
-          },
-          "name": "sisi",
-          "id": 501
         },
-        "group": {
-          "Ext": {
-            "real": {
-              "name": "staff",
-              "id": 20
+        {
+            "_index": ".ds-logs-endpoint.events.file-default-000003",
+            "_id": "0Wn0-3YBimKzADJjEskL",
+            "_source": {
+                "agent": {
+                    "id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+                    "type": "endpoint",
+                    "version": "7.10.1"
+                },
+                "process": {
+                    "Ext": {
+                        "ancestry": []
+                    },
+                    "name": "screencapture",
+                    "pid": 18834,
+                    "entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE4ODM0LTEzMjU1MDE4MzY1Ljg5Njc5MzAwMA==",
+                    "executable": "/usr/sbin/screencapture"
+                },
+                "message": "Endpoint file event",
+                "@timestamp": "2021-01-13T13:32:46.132728Z",
+                "file": {
+                    "Ext": {
+                        "original": {
+                            "path": "/private/tmp/.001.png"
+                        }
+                    },
+                    "path": "/private/tmp/001.png",
+                    "extension": "png",
+                    "name": "001.png"
+                },
+                "ecs": {
+                    "version": "1.5.0"
+                },
+                "data_stream": {
+                    "namespace": "default",
+                    "type": "logs",
+                    "dataset": "endpoint.events.file"
+                },
+                "elastic": {
+                    "agent": {
+                        "id": "bbc973a1-6626-414a-88e5-43be8d909777"
+                    }
+                },
+                "host": {
+                    "hostname": "Sisis-MacBook-Pro.local",
+                    "os": {
+                        "Ext": {
+                            "variant": "macOS"
+                        },
+                        "kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+                        "name": "macOS",
+                        "family": "macos",
+                        "version": "10.15.3",
+                        "platform": "macos",
+                        "full": "macOS 10.15.3"
+                    },
+                    "ip": [
+                        "127.0.0.1",
+                        "::1",
+                        "fe80::1",
+                        "fe80::aede:48ff:fe00:1122",
+                        "192.168.178.59",
+                        "fe80::1830:c57a:1313:130b",
+                        "2a02:a210:2302:b100:101c:31bc:4822:42cb",
+                        "2a02:a210:2302:b100:6c5a:7245:7828:3a1f",
+                        "fe80::7cba:b6ff:feee:dd07",
+                        "fe80::c19f:ad51:9312:adfd",
+                        "fe80::7610:f180:3dda:a15f"
+                    ],
+                    "name": "Sisis-MacBook-Pro.local",
+                    "architecture": "x86_64"
+                },
+                "event": {
+                    "sequence": 146342,
+                    "ingested": "2021-01-13T13:34:05.315705184Z",
+                    "created": "2021-01-13T13:32:46.132728Z",
+                    "kind": "event",
+                    "module": "endpoint",
+                    "action": "rename",
+                    "id": "LzkFKysBSmcwOUEj+++++lsk",
+                    "category": [
+                        "file"
+                    ],
+                    "type": [
+                        "change"
+                    ],
+                    "dataset": "endpoint.events.file"
+                },
+                "user": {
+                    "Ext": {
+                        "real": {
+                            "name": "sisi",
+                            "id": 501
+                        }
+                    },
+                    "name": "sisi",
+                    "id": 501
+                },
+                "group": {
+                    "Ext": {
+                        "real": {
+                            "name": "staff",
+                            "id": 20
+                        }
+                    },
+                    "name": "staff",
+                    "id": 20
+                }
             }
-          },
-          "name": "staff",
-          "id": 20
         }
-      }
-    },
-    {
-      "_index": ".ds-logs-endpoint.events.file-default-000003",
-      "_id": "0Wn0-3YBimKzADJjEskL",
-      "_source": {
-        "agent": {
-          "id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
-          "type": "endpoint",
-          "version": "7.10.1"
-        },
-        "process": {
-          "Ext": {
-            "ancestry": []
-          },
-          "name": "screencapture",
-          "pid": 18834,
-          "entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE4ODM0LTEzMjU1MDE4MzY1Ljg5Njc5MzAwMA==",
-          "executable": "/usr/sbin/screencapture"
-        },
-        "message": "Endpoint file event",
-        "@timestamp": "2021-01-13T13:32:46.132728Z",
-        "file": {
-          "Ext": {
-            "original": {
-              "path": "/private/tmp/.001.png"
-            }
-          },
-          "path": "/private/tmp/001.png",
-          "extension": "png",
-          "name": "001.png"
-        },
-        "ecs": {
-          "version": "1.5.0"
-        },
-        "data_stream": {
-          "namespace": "default",
-          "type": "logs",
-          "dataset": "endpoint.events.file"
-        },
-        "elastic": {
-          "agent": {
-            "id": "bbc973a1-6626-414a-88e5-43be8d909777"
-          }
-        },
-        "host": {
-          "hostname": "Sisis-MacBook-Pro.local",
-          "os": {
-            "Ext": {
-              "variant": "macOS"
-            },
-            "kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
-            "name": "macOS",
-            "family": "macos",
-            "version": "10.15.3",
-            "platform": "macos",
-            "full": "macOS 10.15.3"
-          },
-          "ip": [
-            "127.0.0.1",
-            "::1",
-            "fe80::1",
-            "fe80::aede:48ff:fe00:1122",
-            "192.168.178.59",
-            "fe80::1830:c57a:1313:130b",
-            "2a02:a210:2302:b100:101c:31bc:4822:42cb",
-            "2a02:a210:2302:b100:6c5a:7245:7828:3a1f",
-            "fe80::7cba:b6ff:feee:dd07",
-            "fe80::c19f:ad51:9312:adfd",
-            "fe80::7610:f180:3dda:a15f"
-          ],
-          "name": "Sisis-MacBook-Pro.local",
-          "architecture": "x86_64"
-        },
-        "event": {
-          "sequence": 146342,
-          "ingested": "2021-01-13T13:34:05.315705184Z",
-          "created": "2021-01-13T13:32:46.132728Z",
-          "kind": "event",
-          "module": "endpoint",
-          "action": "rename",
-          "id": "LzkFKysBSmcwOUEj+++++lsk",
-          "category": [
-            "file"
-          ],
-          "type": [
-            "change"
-          ],
-          "dataset": "endpoint.events.file"
-        },
-        "user": {
-          "Ext": {
-            "real": {
-              "name": "sisi",
-              "id": 501
-            }
-          },
-          "name": "sisi",
-          "id": 501
-        },
-        "group": {
-          "Ext": {
-            "real": {
-              "name": "staff",
-              "id": 20
-            }
-          },
-          "name": "staff",
-          "id": 20
-        }
-      }
-    }
-  ]
+    ]
 }
