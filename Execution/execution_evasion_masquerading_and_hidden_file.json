@@ -1,4 +1,10 @@
 {
+	"tactic": "Execution",
+	"techniques": [
+		"T1059"
+	],
+	"documents": [
+		{
 	"_index": ".ds-logs-endpoint.events.process-default-000002",
 	"_type": "_doc",
 	"_id": "7Win3XYBORzSN0EUZ8TD",
