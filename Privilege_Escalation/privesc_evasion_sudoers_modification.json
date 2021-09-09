@@ -1,12 +1,15 @@
 {
-	"tactic": "Persistence",
+	"tactic": "Privilege_Escalation",
 	"techniques": [
-		"T1547.011"
+		"T1548.003"
 	],
 	"documents": [
 		{
 			"_index": ".ds-logs-endpoint.events.file-default-000003",
-			"_id": "j3LqD3cBimKzADJjK4_j",
+			"_type": "_doc",
+			"_id": "THBn93YBORzSN0EUIoDs",
+			"_version": 1,
+			"_score": null,
 			"_source": {
 				"agent": {
 					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
@@ -16,20 +19,20 @@
 				"process": {
 					"Ext": {
 						"ancestry": [
-							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIxMTc0LTEzMjU1MzUzMzI4Ljc0MzQ5MzAwMA=="
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEyNjEyLTEzMjU0OTQyMDE2LjY1OTkzODAwMA=="
 						]
 					},
 					"name": "sudo",
-					"pid": 21175,
-					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTIxMTc1LTEzMjU1MzUzMzI4Ljc1OTA4NjAwMA==",
+					"pid": 12613,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEyNjEzLTEzMjU0OTQyMDE2LjY4MDI4ODAwMA==",
 					"executable": "/usr/bin/sudo"
 				},
 				"message": "Endpoint file event",
-				"@timestamp": "2021-01-17T10:35:29.005999Z",
+				"@timestamp": "2021-01-12T16:20:16.682309Z",
 				"file": {
-					"path": "/private/var/root/Library/Preferences/com.apple.loginwindow.plist",
-					"extension": "plist",
-					"name": "com.apple.loginwindow.plist"
+					"path": "/private/etc/sudoers",
+					"extension": "",
+					"name": "sudoers"
 				},
 				"ecs": {
 					"version": "1.5.0"
@@ -63,24 +66,22 @@
 						"fe80::1",
 						"fe80::aede:48ff:fe00:1122",
 						"192.168.178.59",
-						"fe80::8ee:7a0d:4389:9964",
+						"fe80::1830:c57a:1313:130b",
 						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
-						"2a02:a210:2302:b100:7ce9:38f8:ba02:5884",
-						"fe80::c8c0:f8ff:fe5b:e6ed",
-						"fe80::f921:7982:8ac4:506f",
-						"fe80::c024:1c64:cde4:c9d6"
+						"2a02:a210:2302:b100:c853:552f:3c0a:2411",
+						"fe80::7cba:b6ff:feee:dd07"
 					],
 					"name": "Sisis-MacBook-Pro.local",
 					"architecture": "x86_64"
 				},
 				"event": {
-					"sequence": 112724,
-					"ingested": "2021-01-17T10:35:40.897679664Z",
-					"created": "2021-01-17T10:35:29.005999Z",
+					"sequence": 90207,
+					"ingested": "2021-01-12T16:21:40.200387219Z",
+					"created": "2021-01-12T16:20:16.682309Z",
 					"kind": "event",
 					"module": "endpoint",
 					"action": "modification",
-					"id": "M+/DG+Vxcn+rwQl9+++++d4P",
+					"id": "LzkFKysBSmcwOUEj+++++Sg8",
 					"category": [
 						"file"
 					],

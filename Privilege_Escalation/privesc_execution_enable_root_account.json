@@ -1,13 +1,12 @@
 {
-	"tactic": "Lateral_Movement",
+	"tactic": "Privilege_Escalation",
 	"techniques": [
-		"T1201.004",
-		"T1059.006"
+		"T1078.003"
 	],
 	"documents": [
 		{
 			"_index": ".ds-logs-endpoint.events.process-default-000003",
-			"_id": "NRmFOHcBORzSN0EUK9AY",
+			"_id": "wnB893YBORzSN0EUDKea",
 			"_source": {
 				"agent": {
 					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
@@ -16,31 +15,45 @@
 				},
 				"process": {
 					"Ext": {
-						"ancestry": []
+						"ancestry": [
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE0MDg0LTEzMjU0OTQzNDI1LjI4MTU1NzAwMA==",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTktMTMyNTQ4MzA1OTguMjI3MjgzMDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTktMTMyNTQ4MzA1OTguMjI1NDUwMDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTgtMTMyNTQ4MzA1OTguMjAwNzE2MDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTgtMTMyNTQ4MzA1OTguMTk5NjU5MDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTctMTMyNTQ4MzA1OTguMTk0NjcwMDA="
+						]
 					},
 					"args": [
-						"networksetup",
-						"-connectpppoeservice",
-						"MyVPN"
+						"dsenableroot",
+						"-u",
+						"alistar",
+						"-p",
+						"PassPass123",
+						"-r",
+						"Passw0rd123"
 					],
 					"parent": {
 						"args": [],
-						"entity_id": ""
+						"name": "zsh",
+						"pid": 1959,
+						"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE0MDg0LTEzMjU0OTQzNDI1LjI4MTU1NzAwMA==",
+						"executable": "/bin/zsh"
 					},
-					"name": "networksetup",
-					"pid": 44795,
-					"args_count": 3,
-					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTQ0Nzk1LTEzMjU2MDM0NTI3Ljk3NjIxNTAwMA==",
-					"command_line": "networksetup -connectpppoeservice MyVPN",
-					"executable": "/usr/sbin/networksetup",
+					"name": "dsenableroot",
+					"pid": 14084,
+					"args_count": 7,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE0MDg0LTEzMjU0OTQzNDI1LjI4NTYxMjAwMA==",
+					"command_line": "dsenableroot -u sisi -p sisi123 -r Passw0rd123",
+					"executable": "/usr/sbin/dsenableroot",
 					"hash": {
-						"sha1": "9ef90574a4f2ec5d4ada4fe4090451cf5d36993f",
-						"sha256": "d3964c8d04330186f24508ce7fbe146133c16ffdca0eaeded288db00a38c5578",
-						"md5": "8de1e815c4c2538a494fcf0fb4c13822"
+						"sha1": "5191fda248339d2e73a232b41553c875a871516c",
+						"sha256": "15c8af0ce51ecf146736e94e2112b7e547d27653ac47740fb4700731cfec55cd",
+						"md5": "65770948129f520bb08e970e41388352"
 					}
 				},
 				"message": "Endpoint process event",
-				"@timestamp": "2021-01-25T07:48:47.976215Z",
+				"@timestamp": "2021-01-12T16:43:45.285612Z",
 				"ecs": {
 					"version": "1.5.0"
 				},
@@ -73,24 +86,22 @@
 						"fe80::1",
 						"fe80::aede:48ff:fe00:1122",
 						"192.168.178.59",
-						"fe80::8ee:7a0d:4389:9964",
+						"fe80::1830:c57a:1313:130b",
 						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
-						"2a02:a210:2302:b100:7ce9:38f8:ba02:5884",
-						"fe80::c8c0:f8ff:fe5b:e6ed",
-						"fe80::f921:7982:8ac4:506f",
-						"fe80::c024:1c64:cde4:c9d6"
+						"2a02:a210:2302:b100:c853:552f:3c0a:2411",
+						"fe80::7cba:b6ff:feee:dd07"
 					],
 					"name": "Sisis-MacBook-Pro.local",
 					"architecture": "x86_64"
 				},
 				"event": {
-					"sequence": 14201360,
-					"ingested": "2021-01-25T07:49:47.406363697Z",
-					"created": "2021-01-25T07:48:47.976215Z",
+					"sequence": 101445,
+					"ingested": "2021-01-12T16:44:30.714951915Z",
+					"created": "2021-01-12T16:43:45.285612Z",
 					"kind": "event",
 					"module": "endpoint",
 					"action": "exec",
-					"id": "M+/DG+Vxcn+rwQl9++++qhpt",
+					"id": "LzkFKysBSmcwOUEj+++++WpP",
 					"category": [
 						"process"
 					],

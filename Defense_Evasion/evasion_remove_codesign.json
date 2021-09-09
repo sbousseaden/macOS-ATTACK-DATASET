@@ -1,133 +1,141 @@
 {
-	"_index": ".ds-logs-endpoint.events.process-default-000002",
-	"_type": "_doc",
-	"_id": "xWFEyXYBimKzADJjJZ2x",
-	"_version": 1,
-	"_score": null,
-	"_source": {
-		"agent": {
-			"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
-			"type": "endpoint",
-			"version": "7.10.1"
-		},
-		"process": {
-			"Ext": {
-				"ancestry": [
-					"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEwMzktMTMyNTQxNjc5NDIuNzEyNDM0MDAw"
-				]
-			},
-			"args": [
-				"codesign",
-				"--remove-signature",
-				"/tmp/security"
-			],
-			"parent": {
-				"args": [],
-				"name": "codesign",
-				"pid": 1039,
-				"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEwMzktMTMyNTQxNjc5NDIuNzEyNDM0MDAw",
-				"executable": "/usr/bin/codesign"
-			},
-			"name": "codesign",
-			"pid": 1040,
-			"args_count": 0,
-			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEwNDAtMTMyNTQxNjc5NDIuNzQ3NjQwMDAw",
-			"command_line": "codesign --remove-signature /tmp/security",
-			"executable": "/usr/bin/codesign",
-			"hash": {
-				"sha1": "d6f6eae029fe571ce60b95958434632e7ad4d798",
-				"sha256": "fe37b0dec588d64263013ade1e03216c829d6589e9f383a1d527f9747e9c94fe",
-				"md5": "349a0b11dd691a1549909bcccaa169b6"
-			}
-		},
-		"message": "Endpoint process event",
-		"@timestamp": "2021-01-03T17:19:02.74764Z",
-		"ecs": {
-			"version": "1.5.0"
-		},
-		"data_stream": {
-			"namespace": "default",
-			"type": "logs",
-			"dataset": "endpoint.events.process"
-		},
-		"elastic": {
-			"agent": {
-				"id": "bbc973a1-6626-414a-88e5-43be8d909777"
-			}
-		},
-		"host": {
-			"hostname": "Sisis-MacBook-Pro.local",
-			"os": {
-				"Ext": {
-					"variant": "macOS"
+	"tactic": "Defense_Evasion",
+	"techniques": [
+		"T1036.001"
+	],
+	"documents": [
+		{
+			"_index": ".ds-logs-endpoint.events.process-default-000002",
+			"_type": "_doc",
+			"_id": "xWFEyXYBimKzADJjJZ2x",
+			"_version": 1,
+			"_score": null,
+			"_source": {
+				"agent": {
+					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+					"type": "endpoint",
+					"version": "7.10.1"
 				},
-				"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
-				"name": "macOS",
-				"family": "macos",
-				"version": "10.15.3",
-				"platform": "macos",
-				"full": "macOS 10.15.3"
-			},
-			"ip": [
-				"127.0.0.1",
-				"::1",
-				"fe80::1",
-				"fe80::aede:48ff:fe00:1122",
-				"192.168.178.59",
-				"fe80::894:dd3d:42b0:3329",
-				"2a02:a210:2302:b100:101c:31bc:4822:42cb",
-				"2a02:a210:2302:b100:7db3:f5b1:3a0c:80d5",
-				"fe80::c02:dbff:feb4:1896"
-			],
-			"name": "Sisis-MacBook-Pro.local",
-			"architecture": "x86_64"
-		},
-		"event": {
-			"sequence": 7206,
-			"ingested": "2021-01-03T17:20:55.208243306Z",
-			"created": "2021-01-03T17:19:02.74764Z",
-			"kind": "event",
-			"module": "endpoint",
-			"action": "fork",
-			"id": "Lz4U3NkyhtKn4ybq+++++0IH",
-			"category": [
-				"process"
-			],
-			"type": [
-				"start"
-			],
-			"dataset": "endpoint.events.process"
-		},
-		"user": {
-			"Ext": {
-				"real": {
+				"process": {
+					"Ext": {
+						"ancestry": [
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEwMzktMTMyNTQxNjc5NDIuNzEyNDM0MDAw"
+						]
+					},
+					"args": [
+						"codesign",
+						"--remove-signature",
+						"/tmp/security"
+					],
+					"parent": {
+						"args": [],
+						"name": "codesign",
+						"pid": 1039,
+						"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEwMzktMTMyNTQxNjc5NDIuNzEyNDM0MDAw",
+						"executable": "/usr/bin/codesign"
+					},
+					"name": "codesign",
+					"pid": 1040,
+					"args_count": 0,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEwNDAtMTMyNTQxNjc5NDIuNzQ3NjQwMDAw",
+					"command_line": "codesign --remove-signature /tmp/security",
+					"executable": "/usr/bin/codesign",
+					"hash": {
+						"sha1": "d6f6eae029fe571ce60b95958434632e7ad4d798",
+						"sha256": "fe37b0dec588d64263013ade1e03216c829d6589e9f383a1d527f9747e9c94fe",
+						"md5": "349a0b11dd691a1549909bcccaa169b6"
+					}
+				},
+				"message": "Endpoint process event",
+				"@timestamp": "2021-01-03T17:19:02.74764Z",
+				"ecs": {
+					"version": "1.5.0"
+				},
+				"data_stream": {
+					"namespace": "default",
+					"type": "logs",
+					"dataset": "endpoint.events.process"
+				},
+				"elastic": {
+					"agent": {
+						"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+					}
+				},
+				"host": {
+					"hostname": "Sisis-MacBook-Pro.local",
+					"os": {
+						"Ext": {
+							"variant": "macOS"
+						},
+						"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+						"name": "macOS",
+						"family": "macos",
+						"version": "10.15.3",
+						"platform": "macos",
+						"full": "macOS 10.15.3"
+					},
+					"ip": [
+						"127.0.0.1",
+						"::1",
+						"fe80::1",
+						"fe80::aede:48ff:fe00:1122",
+						"192.168.178.59",
+						"fe80::894:dd3d:42b0:3329",
+						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+						"2a02:a210:2302:b100:7db3:f5b1:3a0c:80d5",
+						"fe80::c02:dbff:feb4:1896"
+					],
+					"name": "Sisis-MacBook-Pro.local",
+					"architecture": "x86_64"
+				},
+				"event": {
+					"sequence": 7206,
+					"ingested": "2021-01-03T17:20:55.208243306Z",
+					"created": "2021-01-03T17:19:02.74764Z",
+					"kind": "event",
+					"module": "endpoint",
+					"action": "fork",
+					"id": "Lz4U3NkyhtKn4ybq+++++0IH",
+					"category": [
+						"process"
+					],
+					"type": [
+						"start"
+					],
+					"dataset": "endpoint.events.process"
+				},
+				"user": {
+					"Ext": {
+						"real": {
+							"name": "sisi",
+							"id": 501
+						}
+					},
 					"name": "sisi",
 					"id": 501
-				}
-			},
-			"name": "sisi",
-			"id": 501
-		},
-		"group": {
-			"Ext": {
-				"real": {
+				},
+				"group": {
+					"Ext": {
+						"real": {
+							"name": "staff",
+							"id": 20
+						}
+					},
 					"name": "staff",
 					"id": 20
 				}
 			},
-			"name": "staff",
-			"id": 20
+			"fields": {
+				"event.ingested": [
+					"2021-01-03T17:20:55.208Z"
+				],
+				"@timestamp": [
+					"2021-01-03T17:19:02.747Z"
+				],
+				"event.created": [
+					"2021-01-03T17:19:02.747Z"
+				]
+			}
 		}
-	},
-	"fields": {
-		"event.ingested": [
-			"2021-01-03T17:20:55.208Z"
-		],
-		"@timestamp": [
-			"2021-01-03T17:19:02.747Z"
-		],
-		"event.created": [
-			"2021-01-03T17:19:02.747Z"
-		]
-	}
+	]
 }

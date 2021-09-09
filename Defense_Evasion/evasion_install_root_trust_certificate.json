@@ -1,124 +1,132 @@
 {
-	"_index": ".ds-logs-endpoint.events.process-default-000003",
-	"_type": "_doc",
-	"_id": "YWkU-3YBimKzADJjPoZf",
-	"_version": 1,
-	"_score": null,
-	"_source": {
-		"agent": {
-			"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
-			"type": "endpoint",
-			"version": "7.10.1"
-		},
-		"process": {
-			"Ext": {
-				"ancestry": []
-			},
-			"args": [
-				"security",
-				"add-trusted-cert",
-				"-d",
-				"-r",
-				"trustRoot",
-				"-k",
-				"/Library/Keychains/System.keychain",
-				"/rootCert.pfx.cer"
-			],
-			"parent": {
-				"args": [],
-				"entity_id": ""
-			},
-			"name": "security",
-			"pid": 15051,
-			"args_count": 8,
-			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE1MDUxLTEzMjU1MDAzNzM1LjYwMjkxOTAwMA==",
-			"command_line": "security add-trusted-cert -d -r trustRoot -k \"/Library/Keychains/System.keychain\" ./rootCert.pfx.cer",
-			"executable": "/usr/bin/security",
-			"hash": {
-				"sha1": "2b85fd77f512a6048acebb58b60531128edb042c",
-				"sha256": "2ac5240cb74b0dcd1883710435531bde2f5ee08598419c60253a4683a6e1f0bf",
-				"md5": "ad9fc2e079dedef409a92c2185ba12be"
-			}
-		},
-		"message": "Endpoint process event",
-		"@timestamp": "2021-01-13T09:28:55.602919Z",
-		"ecs": {
-			"version": "1.5.0"
-		},
-		"data_stream": {
-			"namespace": "default",
-			"type": "logs",
-			"dataset": "endpoint.events.process"
-		},
-		"elastic": {
-			"agent": {
-				"id": "bbc973a1-6626-414a-88e5-43be8d909777"
-			}
-		},
-		"host": {
-			"hostname": "Sisis-MacBook-Pro.local",
-			"os": {
-				"Ext": {
-					"variant": "macOS"
+	"tactic": "Defense_Evasion",
+	"techniques": [
+		"T1553.004"
+	],
+	"documents": [
+		{
+			"_index": ".ds-logs-endpoint.events.process-default-000003",
+			"_type": "_doc",
+			"_id": "YWkU-3YBimKzADJjPoZf",
+			"_version": 1,
+			"_score": null,
+			"_source": {
+				"agent": {
+					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+					"type": "endpoint",
+					"version": "7.10.1"
 				},
-				"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
-				"name": "macOS",
-				"family": "macos",
-				"version": "10.15.3",
-				"platform": "macos",
-				"full": "macOS 10.15.3"
-			},
-			"ip": [
-				"127.0.0.1",
-				"::1",
-				"fe80::1",
-				"fe80::aede:48ff:fe00:1122",
-				"192.168.178.59",
-				"fe80::1830:c57a:1313:130b",
-				"2a02:a210:2302:b100:101c:31bc:4822:42cb",
-				"2a02:a210:2302:b100:314a:8813:f022:f45f",
-				"fe80::7cba:b6ff:feee:dd07",
-				"fe80::c19f:ad51:9312:adfd",
-				"fe80::7610:f180:3dda:a15f"
-			],
-			"name": "Sisis-MacBook-Pro.local",
-			"architecture": "x86_64"
-		},
-		"event": {
-			"sequence": 109363,
-			"ingested": "2021-01-13T09:29:36.604082650Z",
-			"created": "2021-01-13T09:28:55.602919Z",
-			"kind": "event",
-			"module": "endpoint",
-			"action": "exec",
-			"id": "LzkFKysBSmcwOUEj+++++Zl2",
-			"category": [
-				"process"
-			],
-			"type": [
-				"start"
-			],
-			"dataset": "endpoint.events.process"
-		},
-		"user": {
-			"Ext": {
-				"real": {
+				"process": {
+					"Ext": {
+						"ancestry": []
+					},
+					"args": [
+						"security",
+						"add-trusted-cert",
+						"-d",
+						"-r",
+						"trustRoot",
+						"-k",
+						"/Library/Keychains/System.keychain",
+						"/rootCert.pfx.cer"
+					],
+					"parent": {
+						"args": [],
+						"entity_id": ""
+					},
+					"name": "security",
+					"pid": 15051,
+					"args_count": 8,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE1MDUxLTEzMjU1MDAzNzM1LjYwMjkxOTAwMA==",
+					"command_line": "security add-trusted-cert -d -r trustRoot -k \"/Library/Keychains/System.keychain\" ./rootCert.pfx.cer",
+					"executable": "/usr/bin/security",
+					"hash": {
+						"sha1": "2b85fd77f512a6048acebb58b60531128edb042c",
+						"sha256": "2ac5240cb74b0dcd1883710435531bde2f5ee08598419c60253a4683a6e1f0bf",
+						"md5": "ad9fc2e079dedef409a92c2185ba12be"
+					}
+				},
+				"message": "Endpoint process event",
+				"@timestamp": "2021-01-13T09:28:55.602919Z",
+				"ecs": {
+					"version": "1.5.0"
+				},
+				"data_stream": {
+					"namespace": "default",
+					"type": "logs",
+					"dataset": "endpoint.events.process"
+				},
+				"elastic": {
+					"agent": {
+						"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+					}
+				},
+				"host": {
+					"hostname": "Sisis-MacBook-Pro.local",
+					"os": {
+						"Ext": {
+							"variant": "macOS"
+						},
+						"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+						"name": "macOS",
+						"family": "macos",
+						"version": "10.15.3",
+						"platform": "macos",
+						"full": "macOS 10.15.3"
+					},
+					"ip": [
+						"127.0.0.1",
+						"::1",
+						"fe80::1",
+						"fe80::aede:48ff:fe00:1122",
+						"192.168.178.59",
+						"fe80::1830:c57a:1313:130b",
+						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+						"2a02:a210:2302:b100:314a:8813:f022:f45f",
+						"fe80::7cba:b6ff:feee:dd07",
+						"fe80::c19f:ad51:9312:adfd",
+						"fe80::7610:f180:3dda:a15f"
+					],
+					"name": "Sisis-MacBook-Pro.local",
+					"architecture": "x86_64"
+				},
+				"event": {
+					"sequence": 109363,
+					"ingested": "2021-01-13T09:29:36.604082650Z",
+					"created": "2021-01-13T09:28:55.602919Z",
+					"kind": "event",
+					"module": "endpoint",
+					"action": "exec",
+					"id": "LzkFKysBSmcwOUEj+++++Zl2",
+					"category": [
+						"process"
+					],
+					"type": [
+						"start"
+					],
+					"dataset": "endpoint.events.process"
+				},
+				"user": {
+					"Ext": {
+						"real": {
+							"name": "sisi",
+							"id": 501
+						}
+					},
 					"name": "sisi",
 					"id": 501
-				}
-			},
-			"name": "sisi",
-			"id": 501
-		},
-		"group": {
-			"Ext": {
-				"real": {
+				},
+				"group": {
+					"Ext": {
+						"real": {
+							"name": "staff",
+							"id": 20
+						}
+					},
 					"name": "staff",
 					"id": 20
 				}
-			},
-			"name": "staff",
-			"id": 20
+			}
 		}
-	}
+	]
 }

@@ -1,1 +1,125 @@
-[{ "_index": ".ds-logs-endpoint.events.process-default-000002", "_id": "92Zx1HYBORzSN0EU5dDR", "_source": { "agent": { "id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a", "type": "endpoint", "version": "7.10.1" }, "process": { "Ext": { "ancestry": [] }, "args": [ "networksetup", "-setsecurewebproxy", "127.0.0.1", "8003" ], "parent": { "args": [], "entity_id": "" }, "name": "networksetup", "pid": 3774, "args_count": 4, "entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTM3NzQtMTMyNTQzNTU1MjQuODk2OTU1MDAw", "command_line": "networksetup -setsecurewebproxy 127.0.0.1 8003", "executable": "/usr/sbin/networksetup", "hash": { "sha1": "9ef90574a4f2ec5d4ada4fe4090451cf5d36993f", "sha256": "d3964c8d04330186f24508ce7fbe146133c16ffdca0eaeded288db00a38c5578", "md5": "8de1e815c4c2538a494fcf0fb4c13822" } }, "message": "Endpoint process event", "@timestamp": "2021-01-05T21:25:24.896955Z", "ecs": { "version": "1.5.0" }, "data_stream": { "namespace": "default", "type": "logs", "dataset": "endpoint.events.process" }, "elastic": { "agent": { "id": "bbc973a1-6626-414a-88e5-43be8d909777" } }, "host": { "hostname": "Sisis-MacBook-Pro.local", "os": { "Ext": { "variant": "macOS" }, "kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64", "name": "macOS", "family": "macos", "version": "10.15.3", "platform": "macos", "full": "macOS 10.15.3" }, "ip": [ "127.0.0.1", "::1", "fe80::1", "fe80::aede:48ff:fe00:1122", "192.168.178.59", "fe80::1885:faa9:636:661", "2a02:a210:2302:b100:101c:31bc:4822:42cb", "2a02:a210:2302:b100:8056:b2f2:e140:1245", "fe80::ec9f:99ff:fe4a:5a9c", "fe80::a78b:1d7e:fa75:517f", "fe80::3e85:4dfe:d2f8:9edb" ], "name": "Sisis-MacBook-Pro.local", "architecture": "x86_64" }, "event": { "sequence": 28828, "ingested": "2021-01-05T21:26:42.864384774Z", "created": "2021-01-05T21:25:24.896955Z", "kind": "event", "module": "endpoint", "action": "exec", "id": "Lz5xI09L/b+IdAnf+++++7/Z", "category": [ "process" ], "type": [ "start" ], "dataset": "endpoint.events.process" }, "user": { "Ext": { "real": { "name": "sisi", "id": 501 } }, "name": "sisi", "id": 501 }, "group": { "Ext": { "real": { "name": "staff", "id": 20 } }, "name": "staff", "id": 20 } } }]
+{
+	"tactic": "Defense_Evasion",
+	"techniques": [
+		"T1090.001"
+	],
+	"documents": [
+		{
+			"_index": ".ds-logs-endpoint.events.process-default-000002",
+			"_id": "92Zx1HYBORzSN0EU5dDR",
+			"_source": {
+				"agent": {
+					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+					"type": "endpoint",
+					"version": "7.10.1"
+				},
+				"process": {
+					"Ext": {
+						"ancestry": []
+					},
+					"args": [
+						"networksetup",
+						"-setsecurewebproxy",
+						"127.0.0.1",
+						"8003"
+					],
+					"parent": {
+						"args": [],
+						"entity_id": ""
+					},
+					"name": "networksetup",
+					"pid": 3774,
+					"args_count": 4,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTM3NzQtMTMyNTQzNTU1MjQuODk2OTU1MDAw",
+					"command_line": "networksetup -setsecurewebproxy 127.0.0.1 8003",
+					"executable": "/usr/sbin/networksetup",
+					"hash": {
+						"sha1": "9ef90574a4f2ec5d4ada4fe4090451cf5d36993f",
+						"sha256": "d3964c8d04330186f24508ce7fbe146133c16ffdca0eaeded288db00a38c5578",
+						"md5": "8de1e815c4c2538a494fcf0fb4c13822"
+					}
+				},
+				"message": "Endpoint process event",
+				"@timestamp": "2021-01-05T21:25:24.896955Z",
+				"ecs": {
+					"version": "1.5.0"
+				},
+				"data_stream": {
+					"namespace": "default",
+					"type": "logs",
+					"dataset": "endpoint.events.process"
+				},
+				"elastic": {
+					"agent": {
+						"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+					}
+				},
+				"host": {
+					"hostname": "Sisis-MacBook-Pro.local",
+					"os": {
+						"Ext": {
+							"variant": "macOS"
+						},
+						"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+						"name": "macOS",
+						"family": "macos",
+						"version": "10.15.3",
+						"platform": "macos",
+						"full": "macOS 10.15.3"
+					},
+					"ip": [
+						"127.0.0.1",
+						"::1",
+						"fe80::1",
+						"fe80::aede:48ff:fe00:1122",
+						"192.168.178.59",
+						"fe80::1885:faa9:636:661",
+						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+						"2a02:a210:2302:b100:8056:b2f2:e140:1245",
+						"fe80::ec9f:99ff:fe4a:5a9c",
+						"fe80::a78b:1d7e:fa75:517f",
+						"fe80::3e85:4dfe:d2f8:9edb"
+					],
+					"name": "Sisis-MacBook-Pro.local",
+					"architecture": "x86_64"
+				},
+				"event": {
+					"sequence": 28828,
+					"ingested": "2021-01-05T21:26:42.864384774Z",
+					"created": "2021-01-05T21:25:24.896955Z",
+					"kind": "event",
+					"module": "endpoint",
+					"action": "exec",
+					"id": "Lz5xI09L/b+IdAnf+++++7/Z",
+					"category": [
+						"process"
+					],
+					"type": [
+						"start"
+					],
+					"dataset": "endpoint.events.process"
+				},
+				"user": {
+					"Ext": {
+						"real": {
+							"name": "sisi",
+							"id": 501
+						}
+					},
+					"name": "sisi",
+					"id": 501
+				},
+				"group": {
+					"Ext": {
+						"real": {
+							"name": "staff",
+							"id": 20
+						}
+					},
+					"name": "staff",
+					"id": 20
+				}
+			}
+		}
+	]
+}

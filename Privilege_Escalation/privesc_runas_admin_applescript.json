@@ -1,12 +1,15 @@
 {
-	"tactic": "Defense_Evasion",
+	"tactic": "Privilege_Escalation",
 	"techniques": [
-		"T1562.001"
+		"T1548"
 	],
 	"documents": [
 		{
 			"_index": ".ds-logs-endpoint.events.process-default-000002",
-			"_id": "VmSdx3YBORzSN0EUXPzK",
+			"_type": "_doc",
+			"_id": "_WD3xHYBimKzADJj9r9E",
+			"_version": 1,
+			"_score": null,
 			"_source": {
 				"agent": {
 					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
@@ -18,28 +21,34 @@
 						"ancestry": []
 					},
 					"args": [
-						"sqlite3",
-						"/Users/sisi/Library/Application Support/com.apple.TCC/TCC.db",
-						"INSERT OR REPLACE INTO access VALUES('kTCCServiceAccessibility','com.applle.kbls',0,1,1,NULL,NULL)"
+						"osascript",
+						"-e",
+						"do",
+						"shell",
+						"script",
+						"sudo systemsetup -setremotelogin on",
+						"with",
+						"administrator",
+						"privileges"
 					],
 					"parent": {
 						"args": [],
 						"entity_id": ""
 					},
-					"name": "sqlite3",
-					"pid": 3256,
-					"args_count": 3,
-					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTMyNTYtMTMyNTQxNDAzMjguNTYxMjczMDAw",
-					"command_line": "sqlite3 /Users/sisi/Library/Application Support/com.apple.TCC/TCC.db INSERT OR REPLACE INTO access VALUES('kTCCServiceAccessibility','com.applle.kbls',0,1,1,NULL,NULL)",
-					"executable": "/usr/bin/sqlite3",
+					"name": "osascript",
+					"pid": 1320,
+					"args_count": 9,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEzMjAtMTMyNTQwOTU4NTEuODM3OTkzMDAw",
+					"command_line": "osascript -e do shell script sudo systemsetup -setremotelogin on with administrator privileges",
+					"executable": "/usr/bin/osascript",
 					"hash": {
-						"sha1": "9327ba7cbbc7d4e5304a83b4e4f5dfd2d5e86182",
-						"sha256": "2d7bf88e3453a3892d6738f5ecfdec74a1d2b2b07c0568c1b00a4ee171dc4a67",
-						"md5": "85ad2e01684fb094aaf52dc35387c0c9"
+						"sha1": "9f938559a0956dfae4ba48eaf7378dcb799761b5",
+						"sha256": "0ca8c6f4a574c803d68439de2565e85f2e2572b4480ef245ff1293fb4dc0c06f",
+						"md5": "22997dd0b65f7f96d99225788584c88f"
 					}
 				},
 				"message": "Endpoint process event",
-				"@timestamp": "2021-01-03T09:38:48.561273Z",
+				"@timestamp": "2021-01-02T21:17:31.837993Z",
 				"ecs": {
 					"version": "1.5.0"
 				},
@@ -83,13 +92,13 @@
 					"architecture": "x86_64"
 				},
 				"event": {
-					"sequence": 27595,
-					"ingested": "2021-01-03T09:39:07.593297787Z",
-					"created": "2021-01-03T09:38:48.561273Z",
+					"sequence": 10455,
+					"ingested": "2021-01-02T21:19:13.447129172Z",
+					"created": "2021-01-02T21:17:31.837993Z",
 					"kind": "event",
 					"module": "endpoint",
 					"action": "exec",
-					"id": "Lz1Q82VjgRgAyktF+++++6ZQ",
+					"id": "Lz1Q82VjgRgAyktF+++++1G2",
 					"category": [
 						"process"
 					],

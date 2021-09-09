@@ -1,115 +1,123 @@
 {
-	"_index": ".ds-logs-endpoint.events.process-default-000003",
-	"_id": "fnJMAHcBORzSN0EUusMy",
-	"_source": {
-		"agent": {
-			"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
-			"type": "endpoint",
-			"version": "7.10.1"
-		},
-		"process": {
-			"Ext": {
-				"ancestry": []
-			},
-			"args": [
-				"crontab",
-				"/tmp/persistJob"
-			],
-			"parent": {
-				"args": [],
-				"entity_id": ""
-			},
-			"name": "crontab",
-			"pid": 25354,
-			"args_count": 2,
-			"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI1MzU0LTEzMjU1MDkxMzEzLjQxNTg4MDAwMA==",
-			"command_line": "crontab /tmp/persistJob",
-			"executable": "/usr/bin/crontab",
-			"hash": {
-				"sha1": "d3f2fe4429370e1b8551fb9372ff3f8e62ed7220",
-				"sha256": "2be9a6adc698c0d345960d3ddecfdc9334b66341376459b4b787ddddac04572b",
-				"md5": "7755c35b3de1f67354a151eec3e4fc14"
-			}
-		},
-		"message": "Endpoint process event",
-		"@timestamp": "2021-01-14T09:48:33.41588Z",
-		"ecs": {
-			"version": "1.5.0"
-		},
-		"data_stream": {
-			"namespace": "default",
-			"type": "logs",
-			"dataset": "endpoint.events.process"
-		},
-		"elastic": {
-			"agent": {
-				"id": "bbc973a1-6626-414a-88e5-43be8d909777"
-			}
-		},
-		"host": {
-			"hostname": "Sisis-MacBook-Pro.local",
-			"os": {
-				"Ext": {
-					"variant": "macOS"
+	"tactic": "Persistence",
+	"techniques": [
+		"T1053.003"
+	],
+	"documents": [
+		{
+			"_index": ".ds-logs-endpoint.events.process-default-000003",
+			"_id": "fnJMAHcBORzSN0EUusMy",
+			"_source": {
+				"agent": {
+					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+					"type": "endpoint",
+					"version": "7.10.1"
 				},
-				"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
-				"name": "macOS",
-				"family": "macos",
-				"version": "10.15.3",
-				"platform": "macos",
-				"full": "macOS 10.15.3"
-			},
-			"ip": [
-				"127.0.0.1",
-				"::1",
-				"fe80::1",
-				"fe80::aede:48ff:fe00:1122",
-				"192.168.178.59",
-				"fe80::1830:c57a:1313:130b",
-				"2a02:a210:2302:b100:101c:31bc:4822:42cb",
-				"2a02:a210:2302:b100:f047:1980:a3c3:93c9",
-				"fe80::7cba:b6ff:feee:dd07",
-				"fe80::c19f:ad51:9312:adfd",
-				"fe80::7610:f180:3dda:a15f"
-			],
-			"name": "Sisis-MacBook-Pro.local",
-			"architecture": "x86_64"
-		},
-		"event": {
-			"sequence": 204440,
-			"ingested": "2021-01-14T09:49:24.397049925Z",
-			"created": "2021-01-14T09:48:33.41588Z",
-			"kind": "event",
-			"module": "endpoint",
-			"action": "exec",
-			"id": "LzkFKysBSmcwOUEj++++/3i5",
-			"category": [
-				"process"
-			],
-			"type": [
-				"start"
-			],
-			"dataset": "endpoint.events.process"
-		},
-		"user": {
-			"Ext": {
-				"real": {
-					"name": "sisi",
+				"process": {
+					"Ext": {
+						"ancestry": []
+					},
+					"args": [
+						"crontab",
+						"/tmp/persistJob"
+					],
+					"parent": {
+						"args": [],
+						"entity_id": ""
+					},
+					"name": "crontab",
+					"pid": 25354,
+					"args_count": 2,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI1MzU0LTEzMjU1MDkxMzEzLjQxNTg4MDAwMA==",
+					"command_line": "crontab /tmp/persistJob",
+					"executable": "/usr/bin/crontab",
+					"hash": {
+						"sha1": "d3f2fe4429370e1b8551fb9372ff3f8e62ed7220",
+						"sha256": "2be9a6adc698c0d345960d3ddecfdc9334b66341376459b4b787ddddac04572b",
+						"md5": "7755c35b3de1f67354a151eec3e4fc14"
+					}
+				},
+				"message": "Endpoint process event",
+				"@timestamp": "2021-01-14T09:48:33.41588Z",
+				"ecs": {
+					"version": "1.5.0"
+				},
+				"data_stream": {
+					"namespace": "default",
+					"type": "logs",
+					"dataset": "endpoint.events.process"
+				},
+				"elastic": {
+					"agent": {
+						"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+					}
+				},
+				"host": {
+					"hostname": "Sisis-MacBook-Pro.local",
+					"os": {
+						"Ext": {
+							"variant": "macOS"
+						},
+						"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+						"name": "macOS",
+						"family": "macos",
+						"version": "10.15.3",
+						"platform": "macos",
+						"full": "macOS 10.15.3"
+					},
+					"ip": [
+						"127.0.0.1",
+						"::1",
+						"fe80::1",
+						"fe80::aede:48ff:fe00:1122",
+						"192.168.178.59",
+						"fe80::1830:c57a:1313:130b",
+						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+						"2a02:a210:2302:b100:f047:1980:a3c3:93c9",
+						"fe80::7cba:b6ff:feee:dd07",
+						"fe80::c19f:ad51:9312:adfd",
+						"fe80::7610:f180:3dda:a15f"
+					],
+					"name": "Sisis-MacBook-Pro.local",
+					"architecture": "x86_64"
+				},
+				"event": {
+					"sequence": 204440,
+					"ingested": "2021-01-14T09:49:24.397049925Z",
+					"created": "2021-01-14T09:48:33.41588Z",
+					"kind": "event",
+					"module": "endpoint",
+					"action": "exec",
+					"id": "LzkFKysBSmcwOUEj++++/3i5",
+					"category": [
+						"process"
+					],
+					"type": [
+						"start"
+					],
+					"dataset": "endpoint.events.process"
+				},
+				"user": {
+					"Ext": {
+						"real": {
+							"name": "sisi",
+							"id": 501
+						}
+					},
+					"name": "root",
 					"id": 501
-				}
-			},
-			"name": "root",
-			"id": 501
-		},
-		"group": {
-			"Ext": {
-				"real": {
+				},
+				"group": {
+					"Ext": {
+						"real": {
+							"name": "staff",
+							"id": 20
+						}
+					},
 					"name": "staff",
 					"id": 20
 				}
-			},
-			"name": "staff",
-			"id": 20
+			}
 		}
-	}
+	]
 }

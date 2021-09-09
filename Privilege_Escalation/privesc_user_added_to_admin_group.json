@@ -1,15 +1,12 @@
 {
-	"tactic": "Defense_Evasion",
+	"tactic": "Privilege_Escalation",
 	"techniques": [
-		"T1562.001"
+		"T1098"
 	],
 	"documents": [
 		{
 			"_index": ".ds-logs-endpoint.events.process-default-000002",
-			"_type": "_doc",
-			"_id": "RGZE0nYBORzSN0EUVlcn",
-			"_version": 1,
-			"_score": null,
+			"_id": "B2Lq0nYBimKzADJjS6m0",
 			"_source": {
 				"agent": {
 					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
@@ -19,7 +16,7 @@
 				"process": {
 					"Ext": {
 						"ancestry": [
-							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI2MjgtMTMyNTQzMTg5ODIuNzc5MDE1MDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTMwNzEtMTMyNTQzMjk4NTMuNDQ2NDI0MDAw",
 							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEyNTgtMTMyNTQyMjQ3NzMuODU3NjA3MDAw",
 							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEyNTgtMTMyNTQyMjQ3NzMuODU1ODA3MDAw",
 							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTEyNTctMTMyNTQyMjQ3NzMuODMzOTY3MDAw",
@@ -32,30 +29,36 @@
 						]
 					},
 					"args": [
-						"kextunload",
-						"/System/Library/Extensions/EndpointSecurity.kext"
+						"dseditgroup",
+						"-o",
+						"edit",
+						"-a",
+						"backdoor",
+						"-t",
+						"user",
+						"admin"
 					],
 					"parent": {
 						"args": [],
 						"name": "zsh",
 						"pid": 1258,
-						"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI2MjgtMTMyNTQzMTg5ODIuNzc5MDE1MDAw",
+						"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTMwNzEtMTMyNTQzMjk4NTMuNDQ2NDI0MDAw",
 						"executable": "/bin/zsh"
 					},
-					"name": "kextunload",
-					"pid": 2628,
-					"args_count": 2,
-					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTI2MjgtMTMyNTQzMTg5ODIuNzgyODQ2MDAw",
-					"command_line": "kextunload /System/Library/Extensions/EndpointSecurity.kext",
-					"executable": "/sbin/kextunload",
+					"name": "dseditgroup",
+					"pid": 3071,
+					"args_count": 8,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTMwNzEtMTMyNTQzMjk4NTMuNDUwNTA0MDAw",
+					"command_line": "dseditgroup -o edit -a backdoor -t user admin",
+					"executable": "/usr/sbin/dseditgroup",
 					"hash": {
-						"sha1": "befa989085e02e0ada034ac5ab8a35970b06682e",
-						"sha256": "af3c937536d6e2f60648ebc4050c412bdf42ccb1402ac99c4e947eec4823350b",
-						"md5": "16ed386ad58c6294fc7283f84761bf20"
+						"sha1": "747886f90fdeff9db81762f06e57d0d8974172ce",
+						"sha256": "ed1f206524fadf215a080f2b6450f91e320db8a520b07091afaa4e6c7b051580",
+						"md5": "6c02977d8275f4fe84dd54f47a7c5256"
 					}
 				},
 				"message": "Endpoint process event",
-				"@timestamp": "2021-01-05T11:16:22.782846Z",
+				"@timestamp": "2021-01-05T14:17:33.450504Z",
 				"ecs": {
 					"version": "1.5.0"
 				},
@@ -99,13 +102,13 @@
 					"architecture": "x86_64"
 				},
 				"event": {
-					"sequence": 22138,
-					"ingested": "2021-01-05T11:17:42.549436111Z",
-					"created": "2021-01-05T11:16:22.782846Z",
+					"sequence": 25163,
+					"ingested": "2021-01-05T14:18:58.854265910Z",
+					"created": "2021-01-05T14:17:33.450504Z",
 					"kind": "event",
 					"module": "endpoint",
 					"action": "exec",
-					"id": "Lz5xI09L/b+IdAnf+++++4qU",
+					"id": "Lz5xI09L/b+IdAnf+++++5pJ",
 					"category": [
 						"process"
 					],
