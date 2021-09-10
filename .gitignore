@@ -1,3 +1,4 @@
 Pipfile.lock
 Untitled*.ipynb
 .ipynb_checkpoints/
+.pytest_cache/
