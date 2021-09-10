@@ -1,0 +1,140 @@
+{
+	"tactic": "Credential_Access",
+	"techniques": [
+		"T1056.002",
+		"T1059.002"
+	],
+	"documents": [
+		{
+			"_index": ".ds-logs-endpoint.events.process-default-000002",
+			"_type": "_doc",
+			"_id": "sGaC1HYBORzSN0EUUO6I",
+			"_version": 1,
+			"_score": null,
+			"_source": {
+				"agent": {
+					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+					"type": "endpoint",
+					"version": "7.10.1"
+				},
+				"process": {
+					"Ext": {
+						"ancestry": [
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTQzMTAtMTMyNTQzNTY2NzcuNjkwMDQ0MDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTQzMTAtMTMyNTQzNTY2NzcuNjg5MTYxMDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTQzMTAtMTMyNTQzNTY2NzcuNjg3OTgzMDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTQzMDctMTMyNTQzNTY2NzcuNTk4MDA5MDAw"
+						]
+					},
+					"args": [
+						"osascript",
+						"-e",
+						"tell app \"App Store\" to activate",
+						"-e",
+						"tell app \"App Store\" to activate",
+						"-e",
+						"tell app \"App Store\" to display dialog \"App Store requires your password to continue.\" & return & return  default answer \"\" with icon 1 with hidden answer with title \"App Store Alert\""
+					],
+					"parent": {
+						"args": [],
+						"name": "Python",
+						"pid": 4307,
+						"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTQzMTAtMTMyNTQzNTY2NzcuNjkwMDQ0MDAw",
+						"executable": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python"
+					},
+					"name": "osascript",
+					"pid": 4310,
+					"args_count": 7,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTQzMTAtMTMyNTQzNTY2NzcuNjk1NTAzMDAw",
+					"command_line": "osascript -e tell app \"App Store\" to activate -e tell app \"App Store\" to activate -e tell app \"App Store\" to display dialog \"App Store requires your password to continue.\" & return & return  default answer \"\" with icon 1 with hidden answer with title \"App Store Alert\"",
+					"executable": "/usr/bin/osascript",
+					"hash": {
+						"sha1": "9f938559a0956dfae4ba48eaf7378dcb799761b5",
+						"sha256": "0ca8c6f4a574c803d68439de2565e85f2e2572b4480ef245ff1293fb4dc0c06f",
+						"md5": "22997dd0b65f7f96d99225788584c88f"
+					}
+				},
+				"message": "Endpoint process event",
+				"@timestamp": "2021-01-05T21:44:37.695503Z",
+				"ecs": {
+					"version": "1.5.0"
+				},
+				"data_stream": {
+					"namespace": "default",
+					"type": "logs",
+					"dataset": "endpoint.events.process"
+				},
+				"elastic": {
+					"agent": {
+						"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+					}
+				},
+				"host": {
+					"hostname": "Sisis-MacBook-Pro.local",
+					"os": {
+						"Ext": {
+							"variant": "macOS"
+						},
+						"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+						"name": "macOS",
+						"family": "macos",
+						"version": "10.15.3",
+						"platform": "macos",
+						"full": "macOS 10.15.3"
+					},
+					"ip": [
+						"127.0.0.1",
+						"::1",
+						"fe80::1",
+						"fe80::aede:48ff:fe00:1122",
+						"192.168.178.59",
+						"fe80::1885:faa9:636:661",
+						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+						"2a02:a210:2302:b100:d4cf:74be:e14b:9257",
+						"fe80::4061:4ff:fe3c:3428",
+						"fe80::a78b:1d7e:fa75:517f",
+						"fe80::3e85:4dfe:d2f8:9edb"
+					],
+					"name": "Sisis-MacBook-Pro.local",
+					"architecture": "x86_64"
+				},
+				"event": {
+					"sequence": 35194,
+					"ingested": "2021-01-05T21:44:38.791778478Z",
+					"created": "2021-01-05T21:44:37.695503Z",
+					"kind": "event",
+					"module": "endpoint",
+					"action": "exec",
+					"id": "Lz5xI09L/b+IdAnf+++++8q2",
+					"category": [
+						"process"
+					],
+					"type": [
+						"start"
+					],
+					"dataset": "endpoint.events.process"
+				},
+				"user": {
+					"Ext": {
+						"real": {
+							"name": "sisi",
+							"id": 501
+						}
+					},
+					"name": "sisi",
+					"id": 501
+				},
+				"group": {
+					"Ext": {
+						"real": {
+							"name": "staff",
+							"id": 20
+						}
+					},
+					"name": "staff",
+					"id": 20
+				}
+			}
+		}
+	]
+}

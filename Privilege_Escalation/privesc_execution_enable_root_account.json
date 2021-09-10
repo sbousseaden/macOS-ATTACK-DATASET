@@ -1,0 +1,136 @@
+{
+	"tactic": "Privilege_Escalation",
+	"techniques": [
+		"T1078.003"
+	],
+	"documents": [
+		{
+			"_index": ".ds-logs-endpoint.events.process-default-000003",
+			"_id": "wnB893YBORzSN0EUDKea",
+			"_source": {
+				"agent": {
+					"id": "c2d9ce9a-fdef-a405-125c-171a91d0e54a",
+					"type": "endpoint",
+					"version": "7.10.1"
+				},
+				"process": {
+					"Ext": {
+						"ancestry": [
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE0MDg0LTEzMjU0OTQzNDI1LjI4MTU1NzAwMA==",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTktMTMyNTQ4MzA1OTguMjI3MjgzMDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTktMTMyNTQ4MzA1OTguMjI1NDUwMDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTgtMTMyNTQ4MzA1OTguMjAwNzE2MDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTgtMTMyNTQ4MzA1OTguMTk5NjU5MDAw",
+							"YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE5NTctMTMyNTQ4MzA1OTguMTk0NjcwMDA="
+						]
+					},
+					"args": [
+						"dsenableroot",
+						"-u",
+						"alistar",
+						"-p",
+						"PassPass123",
+						"-r",
+						"Passw0rd123"
+					],
+					"parent": {
+						"args": [],
+						"name": "zsh",
+						"pid": 1959,
+						"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE0MDg0LTEzMjU0OTQzNDI1LjI4MTU1NzAwMA==",
+						"executable": "/bin/zsh"
+					},
+					"name": "dsenableroot",
+					"pid": 14084,
+					"args_count": 7,
+					"entity_id": "YzJkOWNlOWEtZmRlZi1hNDA1LTEyNWMtMTcxYTkxZDBlNTRhLTE0MDg0LTEzMjU0OTQzNDI1LjI4NTYxMjAwMA==",
+					"command_line": "dsenableroot -u sisi -p sisi123 -r Passw0rd123",
+					"executable": "/usr/sbin/dsenableroot",
+					"hash": {
+						"sha1": "5191fda248339d2e73a232b41553c875a871516c",
+						"sha256": "15c8af0ce51ecf146736e94e2112b7e547d27653ac47740fb4700731cfec55cd",
+						"md5": "65770948129f520bb08e970e41388352"
+					}
+				},
+				"message": "Endpoint process event",
+				"@timestamp": "2021-01-12T16:43:45.285612Z",
+				"ecs": {
+					"version": "1.5.0"
+				},
+				"data_stream": {
+					"namespace": "default",
+					"type": "logs",
+					"dataset": "endpoint.events.process"
+				},
+				"elastic": {
+					"agent": {
+						"id": "bbc973a1-6626-414a-88e5-43be8d909777"
+					}
+				},
+				"host": {
+					"hostname": "Sisis-MacBook-Pro.local",
+					"os": {
+						"Ext": {
+							"variant": "macOS"
+						},
+						"kernel": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+						"name": "macOS",
+						"family": "macos",
+						"version": "10.15.3",
+						"platform": "macos",
+						"full": "macOS 10.15.3"
+					},
+					"ip": [
+						"127.0.0.1",
+						"::1",
+						"fe80::1",
+						"fe80::aede:48ff:fe00:1122",
+						"192.168.178.59",
+						"fe80::1830:c57a:1313:130b",
+						"2a02:a210:2302:b100:101c:31bc:4822:42cb",
+						"2a02:a210:2302:b100:c853:552f:3c0a:2411",
+						"fe80::7cba:b6ff:feee:dd07"
+					],
+					"name": "Sisis-MacBook-Pro.local",
+					"architecture": "x86_64"
+				},
+				"event": {
+					"sequence": 101445,
+					"ingested": "2021-01-12T16:44:30.714951915Z",
+					"created": "2021-01-12T16:43:45.285612Z",
+					"kind": "event",
+					"module": "endpoint",
+					"action": "exec",
+					"id": "LzkFKysBSmcwOUEj+++++WpP",
+					"category": [
+						"process"
+					],
+					"type": [
+						"start"
+					],
+					"dataset": "endpoint.events.process"
+				},
+				"user": {
+					"Ext": {
+						"real": {
+							"name": "sisi",
+							"id": 501
+						}
+					},
+					"name": "sisi",
+					"id": 501
+				},
+				"group": {
+					"Ext": {
+						"real": {
+							"name": "staff",
+							"id": 20
+						}
+					},
+					"name": "staff",
+					"id": 20
+				}
+			}
+		}
+	]
+}
